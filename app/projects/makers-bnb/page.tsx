@@ -1,157 +1,186 @@
-import Link from "next/link";
+"use client";
 
-export default function MakersBNBCaseStudy() {
-  return (
-    <main className="min-h-screen bg-[#050716] text-white pt-24 pb-32">
-      <div className="mx-auto max-w-4xl px-4">
-        {/* Back link */}
-        <Link
-          href="/"
-          className="text-sm text-white/60 hover:text-white transition inline-flex items-center gap-2 mb-10"
-        >
-          <span className="text-lg">←</span> Back to home
-        </Link>
+import PageTransition from "@/components/PageTransition";
 
-        {/* Title */}
-        <h1 className="text-4xl font-semibold tracking-tight">
-          Makers BnB Project
-        </h1>
-        <p className="mt-2 text-white/60">
-          An Airbnb-style booking platform built as my final engineering project
-          at Makers Academy.
-        </p>
+export default function MakersBnbPage() {
+    return (
+        <PageTransition>
+            <main className="min-h-screen bg-[#050716] pb-24 pt-24 text-white">
+                <div className="mx-auto max-w-5xl px-4">
+                    {/* Header */}
+                    {/* Back link */}
+                    <a
+                        href="/#projects"
+                        className="mt-6 inline-flex items-center text-sm font-semibold text-[#9AE1FF] hover:text-white transition"
+                    >
+                        ← Back to Projects
+                    </a>
 
-        {/* Header visuals */}
-        <div className="relative mt-10 h-64 w-full rounded-3xl bg-gradient-to-br from-[#6C63FF]/20 to-[#9AE1FF]/10 border border-white/10 backdrop-blur-md flex items-center justify-center">
-          <p className="text-white/40 text-sm">
-            (Project screenshot banner coming soon)
-          </p>
-        </div>
+                    <section className="border-b border-white/10 pb-10">
+                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9AE1FF]">
+                            Case Study
+                        </p>
+                        <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
+                            Makers BnB — Accommodation Booking Platform
+                        </h1>
+                        <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
+                            An Airbnb-style booking platform built in a week-long team project
+                            at Makers Academy. Users can register, list properties, browse
+                            spaces, and request bookings — all backed by a PostgreSQL database
+                            and test-driven Ruby backend.
+                        </p>
 
-        {/* Overview */}
-        <section className="mt-16 space-y-6">
-          <h2 className="text-2xl font-semibold">Overview</h2>
-          <p className="text-white/70 leading-relaxed">
-            Makers BnB is a full-stack web application inspired by Airbnb,
-            designed to allow users to list spaces, request bookings, and manage
-            stays. Our team of four built it using test-driven development,
-            clean design principles, and agile delivery practices taught at
-            Makers Academy.
-          </p>
-          <p className="text-white/70 leading-relaxed">
-            The goal wasn’t just to build a clone — it was to learn how to
-            collaborate as an engineering team, write maintainable code, and
-            design a product that feels real.
-          </p>
-        </section>
+                        <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">
+                            <span className="rounded-full bg-white/5 px-3 py-1">
+                                Ruby · Sinatra
+                            </span>
+                            <span className="rounded-full bg-white/5 px-3 py-1">
+                                PostgreSQL
+                            </span>
+                            <span className="rounded-full bg-white/5 px-3 py-1">RSpec · TDD</span>
+                            <span className="rounded-full bg-white/5 px-3 py-1">
+                                Team project
+                            </span>
+                        </div>
 
-        {/* Problem / Solution */}
-        <section className="mt-16 grid gap-12 md:grid-cols-2">
-          <div>
-            <h3 className="text-xl font-semibold">The problem</h3>
-            <p className="mt-3 text-white/65 leading-relaxed">
-              Build a real product under time pressure while applying:
-              <br />
-              • TDD  
-              • Pair programming  
-              • Version control workflows  
-              • User-centred design  
-            </p>
-            <p className="mt-3 text-white/65 leading-relaxed">
-              We needed to create a booking experience with authentication,
-              listings, and a way for users to request stays.
-            </p>
-          </div>
+                        {/* Links */}
+                        <div className="mt-6 flex flex-wrap gap-4 text-xs font-semibold">
+                            <a
+                                href="https://github.com/JoshHil97/makersbnb-case-study"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center rounded-full bg-white/90 px-5 py-2 text-[#050716] transition hover:bg-white"
+                            >
+                                View code on GitHub
+                                <span className="ml-2">↗</span>
+                            </a>
+                            {/* you can wire a live link here later if you deploy it */}
+                        </div>
+                    </section>
 
-          <div>
-            <h3 className="text-xl font-semibold">The solution</h3>
-            <p className="mt-3 text-white/65 leading-relaxed">
-              We designed a full MVC-style application with:
-              <br />
-              • User registration + login  
-              • Listing creation flow  
-              • Booking request system  
-              • Availability logic  
-              • A clean, simple UI  
-            </p>
-            <p className="mt-3 text-white/65 leading-relaxed">
-              Every feature was delivered through TDD and code reviews, keeping
-              the codebase stable as it grew.
-            </p>
-          </div>
-        </section>
+                    {/* Hero screenshot */}
+                    <section className="mt-10">
+                        <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/40">
+                            <img
+                                src="/screenshots/makersbnb.png"
+                                alt="Makers BnB listings page"
+                                className="w-full object-cover"
+                            />
+                        </div>
+                    </section>
 
-        {/* Tech stack */}
-        <section className="mt-20">
-          <h2 className="text-2xl font-semibold">Tech Stack</h2>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <div className="rounded-xl border border-white/10 bg-white/5 p-4">
-              <h4 className="font-semibold text-white">Frontend</h4>
-              <ul className="mt-2 text-white/70 text-sm space-y-1">
-                <li>• HTML, CSS</li>
-                <li>• ERB templating</li>
-                <li>• Basic responsive layout</li>
-              </ul>
-            </div>
-            <div className="rounded-xl border border-white/10 bg-white/5 p-4">
-              <h4 className="font-semibold text-white">Backend</h4>
-              <ul className="mt-2 text-white/70 text-sm space-y-1">
-                <li>• Ruby / Sinatra</li>
-                <li>• MVC architecture</li>
-                <li>• Sessions & authentication</li>
-                <li>• PostgreSQL database</li>
-              </ul>
-            </div>
-            <div className="rounded-xl border border-white/10 bg-white/5 p-4">
-              <h4 className="font-semibold text-white">Practices</h4>
-              <ul className="mt-2 text-white/70 text-sm space-y-1">
-                <li>• Test-Driven Development (RSpec)</li>
-                <li>• Pair programming</li>
-                <li>• Code reviews</li>
-                <li>• Agile workflow</li>
-              </ul>
-            </div>
-            <div className="rounded-xl border border-white/10 bg-white/5 p-4">
-              <h4 className="font-semibold text-white">Focus areas</h4>
-              <ul className="mt-2 text-white/70 text-sm space-y-1">
-                <li>• User flows</li>
-                <li>• Booking logic</li>
-                <li>• Clean class design</li>
-                <li>• Real product thinking</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+                    {/* Project overview */}
+                    <section className="mt-12 grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)]">
+                        <div className="space-y-5 text-sm leading-relaxed text-white/80">
+                            <h2 className="text-lg font-semibold text-white sm:text-xl">
+                                Project Overview
+                            </h2>
+                            <p>
+                                MakersBnB was our final engineering project at{" "}
+                                <strong>Makers Academy</strong>, inspired by Airbnb. Over one
+                                intense week we built a full-stack accommodation booking app
+                                from scratch — including accounts, listings, pricing, and
+                                booking management.
+                            </p>
+                            <p>
+                                We worked in a team of four using{" "}
+                                <strong>pair programming, TDD, and Agile practices</strong>.
+                                Every feature started from a user story, then an RSpec test,
+                                then implementation. I naturally gravitated towards backend
+                                architecture, data modelling, and routing.
+                            </p>
+                            <p>
+                                The goal was not just to tick off features but to{" "}
+                                <strong>build something that feels like a real product</strong>:
+                                clear user flows, a reliable database, and code we’d be happy to
+                                maintain.
+                            </p>
+                        </div>
 
-        {/* Screenshots section */}
-        <section className="mt-20">
-          <h2 className="text-2xl font-semibold">Screenshots</h2>
-          <p className="text-white/50 text-sm mt-2">
-            (We’ll add real screenshots later)
-          </p>
+                        {/* Quick stats */}
+                        <aside className="space-y-4 rounded-2xl border border-white/10 bg-[#090B1C] p-5 text-xs text-white/80">
+                            <h3 className="text-sm font-semibold text-white">
+                                Project snapshot
+                            </h3>
+                            <ul className="space-y-2">
+                                <li>
+                                    <span className="text-white/50">Duration:</span> 1 week
+                                </li>
+                                <li>
+                                    <span className="text-white/50">Team:</span> 4 developers
+                                </li>
+                                <li>
+                                    <span className="text-white/50">Role:</span> Backend
+                                    lead &amp; database design
+                                </li>
+                                <li>
+                                    <span className="text-white/50">Stack:</span> Ruby, Sinatra,
+                                    PostgreSQL, RSpec, Capybara
+                                </li>
+                            </ul>
+                        </aside>
+                    </section>
 
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <div className="h-40 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-white/40 text-sm">
-              Listing page screenshot
-            </div>
-            <div className="h-40 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-white/40 text-sm">
-              Booking flow screenshot
-            </div>
-          </div>
-        </section>
+                    {/* My contributions */}
+                    <section className="mt-16 grid gap-10 md:grid-cols-2">
+                        <div>
+                            <h2 className="text-lg font-semibold text-white sm:text-xl">
+                                My Contributions
+                            </h2>
+                            <ul className="mt-4 space-y-3 text-sm leading-relaxed text-white/80">
+                                <li>
+                                    <strong>Database &amp; schema design:</strong> designed tables
+                                    for users, listings, and bookings, with foreign keys,
+                                    normalised structure, and SQL queries for availability and
+                                    clash detection.
+                                </li>
+                                <li>
+                                    <strong>Core routes &amp; controllers:</strong> implemented
+                                    routes for viewing listings, creating listings, requesting
+                                    bookings, and viewing booking requests.
+                                </li>
+                                <li>
+                                    <strong>Authentication &amp; sessions:</strong> built login /
+                                    signup flows, hashed passwords, and protected routes for
+                                    logged-in users.
+                                </li>
+                                <li>
+                                    <strong>Testing:</strong> wrote unit tests for repositories
+                                    plus Capybara feature tests covering full booking flows.
+                                </li>
+                            </ul>
+                        </div>
 
-        {/* Learnings */}
-        <section className="mt-20">
-          <h2 className="text-2xl font-semibold">What I learned</h2>
-          <ul className="mt-6 text-white/70 leading-relaxed space-y-3">
-            <li>• How to build a full-stack product with real user flows.</li>
-            <li>• How to collaborate effectively in a team with pairing.</li>
-            <li>• How to write maintainable code using TDD.</li>
-            <li>• How to scope features and deliver iteratively.</li>
-            <li>• How to think like a product engineer, not just a coder.</li>
-          </ul>
-        </section>
-      </div>
-    </main>
-  );
+                        <div>
+                            <h2 className="text-lg font-semibold text-white sm:text-xl">
+                                What this project demonstrates
+                            </h2>
+                            <ul className="mt-4 space-y-3 text-sm leading-relaxed text-white/80">
+                                <li>Comfort designing and querying a relational database.</li>
+                                <li>Ability to architect a full-stack product from scratch.</li>
+                                <li>
+                                    Experience working in a <strong>TDD-first</strong> team
+                                    environment.
+                                </li>
+                                <li>
+                                    Strong communication through pairing, standups, and PR
+                                    reviews.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    {/* Closing */}
+                    <section className="mt-16 border-t border-white/10 pt-10 text-sm text-white/75">
+                        <p>
+                            MakersBnB was the project where everything I&apos;d learned at
+                            Makers came together — TDD, clean code, teamwork, and real product
+                            thinking. It&apos;s the foundation for the way I now approach
+                            every new project.
+                        </p>
+                    </section>
+                </div>
+            </main>
+        </PageTransition>
+    );
 }
