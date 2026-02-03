@@ -23,17 +23,17 @@ export default function ReliabilityProjectPage() {
                         </h1>
                         <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
                             A reliability focused project built around a simulated production
-                            system used by veterinary hospitals. I used a simple control panel
-                            to monitor request success rates and investigate image screening
-                            failures across multiple hosts.
+                            system used by veterinary hospitals. My team was <strong>STABL</strong>,
+                            and we used a simple control panel dashboard to monitor success
+                            rates and investigate image screening failures.
                         </p>
 
                         <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">
                             <span className="rounded-full bg-white/5 px-3 py-1">
-                                Monitoring dashboard
+                                STABL team
                             </span>
                             <span className="rounded-full bg-white/5 px-3 py-1">
-                                Success rate tracking
+                                Monitoring dashboard
                             </span>
                             <span className="rounded-full bg-white/5 px-3 py-1">
                                 Image screening
@@ -48,19 +48,16 @@ export default function ReliabilityProjectPage() {
                     <section className="mt-10">
                         <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/40">
                             <img
-                                src="/screenshots/reliability-panel.png"
-                                onError={(e) => {
-                                    e.currentTarget.src =
-                                        "/screenshots/reliability-dashboard.svg";
-                                }}
-                                alt="Control panel dashboard showing success rates by host and image screening failures"
+                                src="/screenshots/reliability-dashboard.svg"
+                                alt="Reliability dashboard showing success rates by host and image screening failures"
                                 className="w-full object-cover"
                             />
                         </div>
                         <p className="mt-3 text-xs text-white/55">
-                            The dashboard shows success rates by host and highlights image
-                            screening failures. On Jan 12, 2026, one host dropped to 88.07% over
-                            the past 24 hours due to repeated invalid JSON responses.
+                            The control panel breaks down success rates per host and highlights
+                            image screening failures. Our STABL environment was pushed up to
+                            <strong>99.99%</strong> success after we identified and fixed the
+                            root cause.
                         </p>
                     </section>
 
@@ -78,8 +75,9 @@ export default function ReliabilityProjectPage() {
                             </p>
                             <p>
                                 The biggest signal was the image screening feature returning
-                                invalid JSON on one host, which dragged the success rate down.
-                                I used the dashboard to track impact while I investigated.
+                                invalid JSON in one environment, which dragged the success rate
+                                down. We tracked the impact in the dashboard while we
+                                investigated and improved the system.
                             </p>
                         </div>
 
@@ -89,12 +87,11 @@ export default function ReliabilityProjectPage() {
                             </h3>
                             <ul className="space-y-2">
                                 <li>
-                                    <span className="text-white/50">Hosts:</span> stabl, tlbs,
-                                    tea
+                                    <span className="text-white/50">Team:</span> STABL
                                 </li>
                                 <li>
-                                    <span className="text-white/50">Example (Jan 12, 2026):</span>{" "}
-                                    stabl 88.07%, tlbs 97.07%, tea 94.92% (past 24 hours)
+                                    <span className="text-white/50">Result:</span> 99.99% request
+                                    success rate (STABL)
                                 </li>
                                 <li>
                                     <span className="text-white/50">Signal:</span> Image screening

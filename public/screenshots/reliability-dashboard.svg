@@ -54,8 +54,8 @@
     <g transform="translate(0,70)">
       <rect x="18" y="0" width="644" height="64" rx="16" fill="rgba(255,255,255,0.03)" />
       <text x="34" y="40" fill="#FFFFFF" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="700">STABL</text>
-      <text x="230" y="40" fill="#F9F871" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="700">88.07%</text>
-      <text x="520" y="40" fill="rgba(255,255,255,0.70)" font-family="ui-sans-serif, system-ui" font-size="15">Investigating failures</text>
+      <text x="230" y="40" fill="#9AE1FF" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="700">99.99%</text>
+      <text x="520" y="40" fill="rgba(255,255,255,0.70)" font-family="ui-sans-serif, system-ui" font-size="15">Stable</text>
     </g>
 
     <g transform="translate(0,146)">
