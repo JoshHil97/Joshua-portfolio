@@ -21,13 +21,13 @@ export default function MakersBnbPage() {
                             Case Study
                         </p>
                         <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
-                            Makers BnB — Accommodation Booking Platform
+                            Makers BnB: Accommodation Booking Platform
                         </h1>
                         <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
-                            An Airbnb-style booking platform built in a week-long team project
+                            An Airbnb style booking platform built in a week long team project
                             at Makers Academy. Users can register, list properties, browse
-                            spaces, and request bookings — all backed by a PostgreSQL database
-                            and test-driven Ruby backend.
+                            spaces, and request bookings. Everything is backed by a PostgreSQL
+                            database and a test driven Ruby backend.
                         </p>
 
                         <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">
@@ -78,8 +78,8 @@ export default function MakersBnbPage() {
                             <p>
                                 MakersBnB was our final engineering project at{" "}
                                 <strong>Makers Academy</strong>, inspired by Airbnb. Over one
-                                intense week we built a full-stack accommodation booking app
-                                from scratch — including accounts, listings, pricing, and
+                                intense week we built a full stack accommodation booking app
+                                from scratch, including accounts, listings, pricing, and
                                 booking management.
                             </p>
                             <p>
@@ -142,7 +142,7 @@ export default function MakersBnbPage() {
                                 <li>
                                     <strong>Authentication &amp; sessions:</strong> built login /
                                     signup flows, hashed passwords, and protected routes for
-                                    logged-in users.
+                                    logged in users.
                                 </li>
                                 <li>
                                     <strong>Testing:</strong> wrote unit tests for repositories
@@ -157,9 +157,9 @@ export default function MakersBnbPage() {
                             </h2>
                             <ul className="mt-4 space-y-3 text-sm leading-relaxed text-white/80">
                                 <li>Comfort designing and querying a relational database.</li>
-                                <li>Ability to architect a full-stack product from scratch.</li>
+                                <li>Ability to architect a full stack product from scratch.</li>
                                 <li>
-                                    Experience working in a <strong>TDD-first</strong> team
+                                    Experience working in a <strong>TDD first</strong> team
                                     environment.
                                 </li>
                                 <li>
@@ -174,7 +174,7 @@ export default function MakersBnbPage() {
                     <section className="mt-16 border-t border-white/10 pt-10 text-sm text-white/75">
                         <p>
                             MakersBnB was the project where everything I&apos;d learned at
-                            Makers came together — TDD, clean code, teamwork, and real product
+                            Makers came together with TDD, clean code, teamwork, and real product
                             thinking. It&apos;s the foundation for the way I now approach
                             every new project.
                         </p>

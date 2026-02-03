@@ -33,7 +33,7 @@ export default function HomePage() {
         <div className="relative mx-auto flex w-full max-w-5xl flex-col gap-12 px-4 md:flex-row md:items-center">
           {/* LEFT: text */}
           <div className="flex-1 space-y-6">
-            <LightningBadge label="Software Engineer · Full-Stack & Mobile" />
+            <LightningBadge label="Software Engineer · Full Stack and Mobile" />
 
             <div>
               <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
@@ -48,10 +48,12 @@ export default function HomePage() {
             </div>
 
             <p className="max-w-xl text-sm text-white/65 sm:text-base">
-              I&apos;m a full-stack developer who loves turning ideas into real
-              products — from the <strong>Makers BnB Project</strong>, an
-              Airbnb-style booking app built at Makers Academy, to a church
-              directory and a spiritual wellness app on mobile.
+              I build full stack web and mobile apps, and I love taking an idea
+              from a rough sketch to something people can actually use. Recent
+              work includes <strong>Makers BnB</strong>, a booking app built at
+              Makers Academy, the <strong>Reliability Project</strong>, a church
+              directory for VBCI, and{" "}
+              <strong>SoulAnchor</strong>, a React Native encouragement app.
             </p>
 
             {/* CTAs */}
@@ -78,7 +80,7 @@ export default function HomePage() {
             <div className="mt-4 flex flex-wrap gap-3 text-xs text-white/60 sm:text-sm">
               <div className="flex items-center gap-2 rounded-full bg-white/5 px-3 py-1">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#9AE1FF]" />
-                Full-stack web · mobile
+                Full stack web · mobile
               </div>
               <div className="flex items-center gap-2 rounded-full bg-white/5 px-3 py-1">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#6C63FF]" />
@@ -106,13 +108,13 @@ export default function HomePage() {
                     Makers BnB Project
                   </p>
                   <p className="text-xs text-white/60">
-                    Airbnb-style booking platform
+                    Airbnb style booking platform
                   </p>
                 </div>
 
                 <p className="text-xs text-white/65">
-                  Full-stack web app with authentication, listings, and booking
-                  flows — built in a test-driven team at Makers Academy.
+                  Full stack web app with authentication, listings, and booking
+                  flows, built in a test driven team at Makers Academy.
                 </p>
 
                 <div className="mt-3 flex flex-wrap gap-2 text-[11px] text-white/70">
@@ -158,15 +160,15 @@ export default function HomePage() {
 
             <p className="text-sm text-white/70 sm:text-base">
               <span className="font-semibold">Makers BnB</span> is an
-              Airbnb-style booking platform I built as part of my final
+              Airbnb style booking platform I built as part of my final
               engineering project at Makers Academy. Our team designed and
-              implemented a full end-to-end experience for guests to browse
+              implemented a full end to end experience for guests to browse
               spaces, request bookings, and manage their stays.
             </p>
 
             <p className="text-sm text-white/60 sm:text-base">
-              We focused on clean, test-driven code and strong collaboration:
-              pair programming, code reviews, and small, well-defined user
+              We focused on clean, test driven code and strong collaboration:
+              pair programming, code reviews, and small, well defined user
               stories. The result was a real product that felt like something
               you could ship to users, not just a coding exercise.
             </p>
@@ -292,8 +294,8 @@ export default function HomePage() {
             </h2>
             <p className="mt-3 max-w-xl text-sm text-white/65">
               A quick tour from my first tiny experiments during lockdown to
-              full-stack products and a mobile app — the projects that shaped
-              how I think as an engineer.
+              full stack products and a mobile app that shaped how I think as an
+              engineer.
             </p>
 
             {/* Timeline / stream */}
@@ -302,7 +304,7 @@ export default function HomePage() {
               <JourneyItemLeft
                 label="2020 · Lockdown"
                 title="First lines of code"
-                body="Started exploring Python and small scripts. Debugging went from frustrating to strangely satisfying — and I realised I wanted to build real things, not just follow tutorials."
+                body="Started exploring Python and small scripts. Debugging went from frustrating to strangely satisfying, and I realised I wanted to build real things, not just follow tutorials."
                 tags={["Python", "Foundations", "Debugging"]}
               />
 
@@ -310,7 +312,7 @@ export default function HomePage() {
               <JourneyItemRight
                 label="Early project · Streamlit"
                 title="Church Directory (Prototype)"
-                body="Built a simple Streamlit app to list church members — my first attempt at replacing messy spreadsheets with something cleaner and more useful."
+                body="Built a simple Streamlit app to list church members. It was my first attempt at replacing messy spreadsheets with something cleaner and more useful."
                 tags={["Python", "Streamlit", "Real problem"]}
               />
 
@@ -326,7 +328,7 @@ export default function HomePage() {
               <JourneyItemRight
                 label="Training arc"
                 title="Makers Academy"
-                body="Intensive bootcamp where I learned to work like an engineer: TDD, pair programming, Agile, and building full-stack apps with a team and real workflows."
+                body="An intensive bootcamp where I learned to work like an engineer. I practised TDD, pair programming, Agile, and building full stack apps with a team and real workflows."
                 tags={["TDD", "Pair programming", "Agile"]}
               />
 
@@ -335,31 +337,39 @@ export default function HomePage() {
                 highlight
                 label="Capstone · Makers"
                 title="Makers BnB Project"
-                body="Final engineering project: an Airbnb-style booking platform with authentication, listings, and booking flows — all built test-first in a cross-functional team."
-                tags={["Full-stack web", "Auth & bookings", "Team project"]}
+                body="Final project at Makers: an Airbnb style booking platform with authentication, listings, and booking flows. Built test first in a cross functional team."
+                tags={["Full stack web", "Auth and bookings", "Team project"]}
               />
 
-              {/* 6 – VBCI Church Directory */}
+              {/* 6 – Reliability Project */}
               <JourneyItemRight
-                label="Real client-style app"
+                label="Reliability"
+                title="Reliability Project"
+                body="A reliability focused project improving a simulated veterinary hospital system. I tracked success rates, investigated failures, and rolled out fixes through a load balancer."
+                tags={["Observability", "Load balancer", "Security"]}
+              />
+
+              {/* 7 – VBCI Church Directory */}
+              <JourneyItemRight
+                label="Real client style app"
                 title="VBCI Church Directory"
-                body="Evolved the original Streamlit idea into a proper full-stack app with Spring Boot, React, and Tailwind — branded around VBCI and built to be genuinely useful."
+                body="Evolved the original Streamlit idea into a proper full stack app with Spring Boot, React, and Tailwind. Branded around VBCI and built to be genuinely useful."
                 tags={["Spring Boot", "React", "Tailwind"]}
               />
 
-              {/* 7 – SoulAnchor */}
+              {/* 8 – SoulAnchor */}
               <JourneyItemLeft
                 label="Mobile UX"
                 title="SoulAnchor App"
-                body="A React Native app for spiritual encouragement, using animated gradients, swipeable cards, and an emotion-based content engine focused on how people actually feel."
+                body="A React Native app for spiritual encouragement, using animated gradients, swipeable cards, and an emotion based content engine focused on how people actually feel."
                 tags={["React Native", "Animations", "Product thinking"]}
               />
 
-              {/* 8 – Next steps */}
+              {/* 9 – Next steps */}
               <JourneyItemRight
                 label="Coming next"
                 title="Next.js · Cloud · Beyond"
-                body="Continuing the journey with more TypeScript/Next.js work, deeper backend projects, and cloud deployments — building on everything above."
+                body="Next up is more TypeScript and Next.js work, deeper backend projects, and cloud deployments. I want to keep building on everything above."
                 tags={["Next.js", "TypeScript", "Cloud"]}
                 isFuture
               />
@@ -385,8 +395,8 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="max-w-md text-sm text-white/65">
-              Full-stack web, real client work, and mobile — centred around the
-              Makers BnB project.
+              Full stack web, real client style work, and mobile projects, with
+              Makers BnB as the centrepiece.
             </p>
           </div>
 
@@ -417,13 +427,13 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                Airbnb-style booking platform built as a final team project at
+                Airbnb style booking platform built as a final team project at
                 Makers Academy.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Full-stack
+                  Full stack
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
                   Bookings
@@ -448,6 +458,59 @@ export default function HomePage() {
                   className="inline-flex items-center text-white/70 transition hover:text-white"
                 >
                   View code
+                  <span className="ml-1">↗</span>
+                </a>
+              </div>
+            </motion.article>
+
+            {/* Reliability Project CARD */}
+            <motion.article
+              whileHover={{
+                y: -6,
+                scale: 1.015,
+                boxShadow: "0 18px 45px rgba(0,0,0,0.6)",
+              }}
+              whileTap={{ scale: 0.99 }}
+              transition={{ type: "spring", stiffness: 260, damping: 22 }}
+              className="flex flex-col rounded-2xl border border-white/10 bg-[#090B1C] p-5"
+            >
+              <div className="mb-3 overflow-hidden rounded-xl border border-white/5 bg-black/40">
+                <img
+                  src="/screenshots/reliability-dashboard.svg"
+                  alt="Reliability dashboard"
+                  className="h-32 w-full object-cover"
+                />
+              </div>
+
+              <h3 className="text-sm font-semibold text-white">
+                Reliability Project
+              </h3>
+
+              <p className="mt-2 text-xs text-white/70">
+                Reliability focused work on a veterinary hospital system, using
+                monitoring, security improvements, and safe rollouts.
+              </p>
+
+              <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Observability
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Load balancer
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Security
+                </span>
+              </div>
+
+              <div className="mt-4 flex-1" />
+
+              <div className="mt-4 flex flex-col gap-1 text-xs font-semibold">
+                <a
+                  href="/projects/reliability-project"
+                  className="inline-flex items-center text-[#9AE1FF] transition hover:text-white"
+                >
+                  View case study
                   <span className="ml-1">↗</span>
                 </a>
               </div>
@@ -478,7 +541,7 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                A real-world church member directory built with Spring Boot +
+                A real world church member directory built with Spring Boot +
                 React/Tailwind.
               </p>
 
@@ -620,7 +683,7 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                A data-focused accountability dashboard for tracking habits and
+                A data focused accountability dashboard for tracking habits and
                 lifestyle metrics using Streamlit.
               </p>
 
@@ -673,8 +736,9 @@ export default function HomePage() {
             </div>
 
             <p className="max-w-md text-sm text-white/65">
-              A foundation in full-stack web and mobile development — focusing
-              on clean code, problem-solving, and collaborative engineering.
+              A foundation in full stack web and mobile development, with a
+              focus on clean code, problem solving, and collaborative
+              engineering.
             </p>
           </div>
 
@@ -708,7 +772,7 @@ export default function HomePage() {
                 Frameworks &amp; Libraries
               </h3>
               <p className="mt-1 text-xs text-white/50">
-                Tools for building full-stack and mobile experiences.
+                Tools for building full stack and mobile experiences.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/85">
@@ -784,10 +848,10 @@ export default function HomePage() {
               </p>
 
               <ul className="mt-3 space-y-2 text-[0.8rem] leading-relaxed text-white/85">
-                <li>• Clear and confident communicator.</li>
-                <li>• Strong problem-solving mindset.</li>
-                <li>• Team-first collaborator.</li>
-                <li>• Growth-oriented and adaptable.</li>
+                <li>Clear and confident communicator.</li>
+                <li>Strong problem solving mindset.</li>
+                <li>Collaborative and team focused.</li>
+                <li>Growth focused and adaptable.</li>
               </ul>
             </div>
           </div>
@@ -812,7 +876,7 @@ export default function HomePage() {
             </div>
 
             <p className="max-w-md text-sm text-white/65">
-              A story of curiosity, persistence, and creative problem-solving.
+              A story of curiosity, persistence, and creative problem solving.
             </p>
           </div>
 
@@ -821,23 +885,22 @@ export default function HomePage() {
             {/* LEFT COLUMN — Story */}
             <div className="space-y-6 text-sm leading-relaxed text-white/80 sm:text-base">
               <p>
-                I started exploring code during lockdown — realising that if
-                “nothing comes from nothing,” the only option was to start
-                building. Debugging became a challenge I genuinely enjoyed.
+                I started exploring code during lockdown. I kept thinking,
+                “nothing comes from nothing,” so I started building. Debugging
+                became a challenge I genuinely enjoyed.
               </p>
 
               <p>
                 Joining <strong>Makers Academy</strong> solidified everything. It
-                wasn’t just about learning syntax — I learned how to think like
+                wasn’t just about learning syntax. I learned how to think like
                 an engineer. TDD, pair programming, clean code, version control,
                 and how to build real products as a team.
               </p>
 
               <p>
-                Since then, I&apos;ve built full-stack apps, mobile experiences, and
-                my final project — the <strong>Makers BnB</strong> platform —
-                which taught me more about engineering practices than anything
-                else.
+                Since then, I&apos;ve built full stack apps and mobile experiences.
+                <strong> Makers BnB</strong> taught me more about engineering
+                practices than anything else.
               </p>
 
               <p>
@@ -850,19 +913,19 @@ export default function HomePage() {
             <div className="space-y-6 text-sm leading-relaxed text-white/80 sm:text-base">
               <p>
                 Outside of coding, I draw inspiration from anime, modern
-                techwear, and <strong>Doctor Who</strong> — the colours, the
+                techwear, and <strong>Doctor Who</strong>. The colours, the
                 energy, the motion. That’s why this portfolio has lightning
-                accents and vortex-style gradients.
+                accents and vortex style gradients.
               </p>
 
               <p>
                 I’m driven by growth. Whether it’s trying a new stack, refactoring
-                code to be cleaner, or helping someone understand a concept — I
+                code to be cleaner, or helping someone understand a concept, I
                 love that tech gives me space to constantly level up.
               </p>
 
               <p>
-                My long-term goal:{" "}
+                My long term goal:{" "}
                 <strong>
                   become an engineer who builds meaningful products, uplifts
                   teams, and keeps learning fast.
@@ -889,7 +952,7 @@ export default function HomePage() {
             </h2>
 
             <p className="mt-3 max-w-xl text-sm text-white/65 sm:text-base">
-              Open to junior software engineer and full-stack roles. If my work
+              Open to junior software engineer and full stack roles. If my work
               resonates with you, I&apos;d love to hear from you.
             </p>
 

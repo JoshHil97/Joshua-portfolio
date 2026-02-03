@@ -21,7 +21,7 @@ export default function SoulAnchorPage() {
                             Case Study
                         </p>
                         <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
-                            SoulAnchor — Emotion-Based Encouragement App
+                            SoulAnchor: Emotion Based Encouragement App
                         </h1>
                         <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
                             A React Native app that lets users choose how they&apos;re feeling
@@ -99,7 +99,7 @@ export default function SoulAnchorPage() {
                             </p>
                             <p>
                                 I focused on making the interaction feel <strong>calming and
-                                    intentional</strong> — soft gradients, smooth transitions, and a
+                                    intentional</strong>, with soft gradients, smooth transitions, and a
                                 layout that puts the emotional content front and centre.
                             </p>
                         </div>
@@ -116,7 +116,7 @@ export default function SoulAnchorPage() {
                                     anchors.
                                 </li>
                                 <li>
-                                    Built the gradient background and micro-animations with React
+                                    Built the gradient background and micro animations with React
                                     Native + Reanimated/Animated API.
                                 </li>
                                 <li>
@@ -161,7 +161,7 @@ export default function SoulAnchorPage() {
                                 <li>Comfort building React Native UIs with TypeScript.</li>
                                 <li>Focus on UX details and how an app feels to use.</li>
                                 <li>
-                                    Ability to model domain-specific data (emotions, verses,
+                                    Ability to model domain specific data (emotions, verses,
                                     prayers) cleanly in code.
                                 </li>
                                 <li>

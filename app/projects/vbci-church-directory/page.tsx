@@ -21,12 +21,12 @@ export default function VbciChurchDirectoryPage() {
                             Case Study
                         </p>
                         <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
-                            VBCI Church Directory — Member &amp; Ministry Manager
+                            VBCI Church Directory: Member &amp; Ministry Manager
                         </h1>
                         <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
                             A modern directory to keep track of members, contact details, and
                             ministries for Victory Bible Church International (VBCI). Built as
-                            a full-stack project using Java Spring Boot for the API and a
+                            a full stack project using Java Spring Boot for the API and a
                             React + TypeScript frontend styled with Tailwind.
                         </p>
 
@@ -102,7 +102,7 @@ export default function VbciChurchDirectoryPage() {
                             </p>
                             <p>
                                 After Makers, I revisited the idea and rebuilt it properly as a{" "}
-                                <strong>full-stack app</strong>: a Spring Boot API with a typed
+                                <strong>full stack app</strong>: a Spring Boot API with a typed
                                 React UI. Rather than a quick prototype, the goal was something
                                 the church could actually rely on.
                             </p>
@@ -143,7 +143,7 @@ export default function VbciChurchDirectoryPage() {
                                     a matching count.
                                 </li>
                                 <li>
-                                    <strong>Edit &amp; delete</strong> existing entries in-place.
+                                    <strong>Edit &amp; delete</strong> existing entries in place.
                                 </li>
                                 <li>
                                     Clean, branded UI with VBCI styling and responsive layout.
@@ -161,7 +161,7 @@ export default function VbciChurchDirectoryPage() {
                                 <li>
                                     Experience turning a quick prototype into a structured product.
                                 </li>
-                                <li>Focus on solving a real-world, community-based problem.</li>
+                                <li>Focus on solving a real world, community based problem.</li>
                             </ul>
                         </div>
                     </section>

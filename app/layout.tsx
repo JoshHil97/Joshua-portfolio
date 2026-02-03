@@ -4,7 +4,7 @@ import PageTransition from "@/components/PageTransition";
 
 export const metadata: Metadata = {
   title: "Joshua Hilarion · Portfolio",
-  description: "Full-stack and mobile developer portfolio of Joshua Hilarion.",
+  description: "Full stack and mobile developer portfolio of Joshua Hilarion.",
 };
 
 export default function RootLayout({
