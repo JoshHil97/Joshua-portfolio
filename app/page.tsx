@@ -50,19 +50,20 @@ export default function HomePage() {
             <p className="max-w-xl text-sm text-white/65 sm:text-base">
               I build full stack web and mobile apps, and I love taking an idea
               from a rough sketch to something people can actually use. Recent
-              work includes <strong>Makers BnB</strong>, a booking app built at
-              Makers Academy, the <strong>Reliability Project</strong>, a church
-              directory for VBCI, and{" "}
-              <strong>SoulAnchor</strong>, a React Native encouragement app.
+              work includes <strong>Oil for the Journey</strong>, a reflective
+              writing platform built with Next.js and Supabase, the{" "}
+              <strong>Reliability Project</strong> with my STABL team, a church
+              directory for VBCI, <strong>Makers BnB</strong> at Makers Academy,
+              and <strong>SoulAnchor</strong>, a React Native encouragement app.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href="/projects/makers-bnb"
+                href="/projects/oil-for-the-journey"
                 className="group inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#6C63FF] via-[#9AE1FF] to-[#6C63FF] px-6 py-3 text-sm font-semibold text-[#050716] shadow-[0_0_30px_rgba(154,225,255,0.9)] transition hover:brightness-110"
               >
-                View Makers BnB Project
+                View Oil for the Journey
                 <span className="ml-2 transition-transform group-hover:translate-x-0.5">
                   ↗
                 </span>
@@ -105,32 +106,33 @@ export default function HomePage() {
                     Featured Project
                   </p>
                   <p className="text-sm font-semibold text-white">
-                    Makers BnB Project
+                    Oil for the Journey
                   </p>
                   <p className="text-xs text-white/60">
-                    Airbnb style booking platform
+                    Reflective writing platform
                   </p>
                 </div>
 
                 <p className="text-xs text-white/65">
-                  Full stack web app with authentication, listings, and booking
-                  flows, built in a test driven team at Makers Academy.
+                  Full stack Next.js app with Supabase authentication and a
+                  draft to publish workflow, built for calm reading and
+                  intentional publishing.
                 </p>
 
                 <div className="mt-3 flex flex-wrap gap-2 text-[11px] text-white/70">
                   <span className="rounded-full bg-white/5 px-2.5 py-1">
-                    MVC · REST API
+                    Next.js · Supabase
                   </span>
                   <span className="rounded-full bg-white/5 px-2.5 py-1">
-                    Auth &amp; bookings
+                    Drafts · Admin
                   </span>
                   <span className="rounded-full bg-white/5 px-2.5 py-1">
-                    TDD · Code reviews
+                    Readability first
                   </span>
                 </div>
 
                 <div className="mt-4 flex items-center justify-between text-[11px] text-white/55">
-                  <span>Centre of the portfolio</span>
+                  <span>Featured project</span>
                   <span className="inline-flex items-center gap-1 text-[#9AE1FF]">
                     Scroll to section
                     <span>↧</span>
@@ -142,9 +144,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* MAKERS BNB SECTION */}
+      {/* OIL FOR THE JOURNEY SECTION */}
       <section
-        id="makers-bnb"
+        id="oil-for-the-journey"
         className="border-t border-white/10 bg-[#050716] py-20"
       >
         <div className="mx-auto flex max-w-5xl flex-col gap-10 px-4 md:flex-row">
@@ -155,40 +157,39 @@ export default function HomePage() {
             </p>
 
             <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              Makers BnB Project
+              Oil for the Journey
             </h2>
 
             <p className="text-sm text-white/70 sm:text-base">
-              <span className="font-semibold">Makers BnB</span> is an
-              Airbnb style booking platform I built as part of my final
-              engineering project at Makers Academy. Our team designed and
-              implemented a full end to end experience for guests to browse
-              spaces, request bookings, and manage their stays.
+              <span className="font-semibold">Oil for the Journey</span> is a
+              reflective writing platform designed for faith focused journaling,
+              teaching notes, and long form reflections. The focus is clarity,
+              readability, and intentional publishing, not engagement metrics.
             </p>
 
             <p className="text-sm text-white/60 sm:text-base">
-              We focused on clean, test driven code and strong collaboration:
-              pair programming, code reviews, and small, well defined user
-              stories. The result was a real product that felt like something
-              you could ship to users, not just a coding exercise.
+              I built it as a full stack Next.js app with Supabase for
+              authentication and data. Notes can be drafted privately, edited
+              over time, and published when ready, with admin controls kept out
+              of sight for public readers.
             </p>
 
             {/* Links */}
             <div className="flex flex-wrap gap-3 pt-2">
               <a
-                href="/projects/makers-bnb"
+                href="/projects/oil-for-the-journey"
                 className="inline-flex items-center justify-center rounded-full bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 backdrop-blur-md transition hover:bg-white/15"
               >
                 View case study
                 <span className="ml-2">↗</span>
               </a>
               <a
-                href="https://github.com/JoshHil97/makersbnb-case-study"
+                href="https://oilfor.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 backdrop-blur-md transition hover:border-[#9AE1FF]/70 hover:text-white"
               >
-                View code
+                Live site
                 <span className="ml-2">↗</span>
               </a>
             </div>
@@ -198,9 +199,14 @@ export default function HomePage() {
           <div className="flex-1 space-y-5">
             <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/40">
               <img
-                src="/screenshots/makersbnb.png"
-                alt="Makers BnB listings page"
+                src="/screenshots/oilfor-home.png"
+                alt="Oil for the Journey home page"
                 className="w-full object-cover"
+                onError={(event) => {
+                  const img = event.currentTarget;
+                  img.onerror = null;
+                  img.src = "/screenshots/oilfor-placeholder.svg";
+                }}
               />
             </div>
 
@@ -212,45 +218,45 @@ export default function HomePage() {
               <div className="mt-3 grid grid-cols-2 gap-3 text-xs text-white/70">
                 <div className="space-y-1">
                   <p className="text-[0.7rem] uppercase tracking-[0.18em] text-white/40">
-                    Backend
+                    Platform
                   </p>
                   <ul className="space-y-1">
-                    <li>Ruby · Sinatra</li>
-                    <li>PostgreSQL database</li>
-                    <li>Authentication &amp; sessions</li>
+                    <li>Next.js App Router</li>
+                    <li>TypeScript codebase</li>
+                    <li>Tailwind styling</li>
                   </ul>
                 </div>
 
                 <div className="space-y-1">
                   <p className="text-[0.7rem] uppercase tracking-[0.18em] text-white/40">
-                    Frontend
+                    Auth and data
                   </p>
                   <ul className="space-y-1">
-                    <li>ERB views</li>
-                    <li>Listing & booking flows</li>
-                    <li>Responsive layout</li>
+                    <li>Supabase authentication</li>
+                    <li>Drafts and publishing</li>
+                    <li>Admin access controls</li>
                   </ul>
                 </div>
 
                 <div className="space-y-1">
                   <p className="text-[0.7rem] uppercase tracking-[0.18em] text-white/40">
-                    Practices
+                    UX focus
                   </p>
                   <ul className="space-y-1">
-                    <li>TDD with RSpec</li>
-                    <li>Feature tests (Capybara)</li>
-                    <li>Pair programming</li>
+                    <li>Readability first layout</li>
+                    <li>Paper style content cards</li>
+                    <li>Mobile friendly spacing</li>
                   </ul>
                 </div>
 
                 <div className="space-y-1">
                   <p className="text-[0.7rem] uppercase tracking-[0.18em] text-white/40">
-                    Focus
+                    Deployment
                   </p>
                   <ul className="space-y-1">
-                    <li>Real product thinking</li>
-                    <li>User flows</li>
-                    <li>Collaboration</li>
+                    <li>Vercel deployment</li>
+                    <li>Environment variables</li>
+                    <li>Repeatable releases</li>
                   </ul>
                 </div>
               </div>
@@ -334,7 +340,6 @@ export default function HomePage() {
 
               {/* 5 – Makers BnB */}
               <JourneyItemLeft
-                highlight
                 label="Capstone · Makers"
                 title="Makers BnB Project"
                 body="Final project at Makers: an Airbnb style booking platform with authentication, listings, and booking flows. Built test first in a cross functional team."
@@ -365,12 +370,21 @@ export default function HomePage() {
                 tags={["React Native", "Animations", "Product thinking"]}
               />
 
-              {/* 9 – Next steps */}
+              {/* 9 – Oil for the Journey */}
               <JourneyItemRight
+                highlight
+                label="Featured project"
+                title="Oil for the Journey"
+                body="Built a reflective writing platform with Next.js and Supabase, focused on calm reading, private drafts, and intentional publishing."
+                tags={["Next.js", "Supabase", "Full stack web"]}
+              />
+
+              {/* 10 – Next steps */}
+              <JourneyItemLeft
                 label="Coming next"
-                title="Next.js · Cloud · Beyond"
-                body="Next up is more TypeScript and Next.js work, deeper backend projects, and cloud deployments. I want to keep building on everything above."
-                tags={["Next.js", "TypeScript", "Cloud"]}
+                title="Cloud and deeper backend work"
+                body="Next up is more cloud deployment work, stronger backend architecture, and projects that handle more scale and complexity."
+                tags={["Cloud", "Backend", "TypeScript"]}
                 isFuture
               />
             </div>
@@ -396,13 +410,13 @@ export default function HomePage() {
             </div>
             <p className="max-w-md text-sm text-white/65">
               Full stack web, real client style work, and mobile projects, with
-              Makers BnB as the centrepiece.
+              Oil for the Journey as the centrepiece.
             </p>
           </div>
 
           {/* Project cards */}
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {/* Makers BnB summary card */}
+            {/* Oil for the Journey summary card */}
             <motion.article
               whileHover={{
                 y: -8,
@@ -416,48 +430,55 @@ export default function HomePage() {
               {/* Screenshot */}
               <div className="mb-3 overflow-hidden rounded-xl border border-white/5 bg-black/40">
                 <img
-                  src="/screenshots/makersbnb.png"
-                  alt="Makers BnB UI"
+                  src="/screenshots/oilfor-home.png"
+                  alt="Oil for the Journey UI"
                   className="h-32 w-full object-cover"
+                  onError={(event) => {
+                    const img = event.currentTarget;
+                    img.onerror = null;
+                    img.src = "/screenshots/oilfor-placeholder.svg";
+                  }}
                 />
               </div>
 
               <h3 className="text-sm font-semibold text-white">
-                Makers BnB Project
+                Oil for the Journey
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                Airbnb style booking platform built as a final team project at
-                Makers Academy.
+                Reflective writing platform with drafts, admin controls, and a
+                reading first UI.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Full stack
+                  Next.js
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Bookings
+                  Supabase
                 </span>
-                <span className="rounded-full bg-white/5 px-2 py-1">TDD</span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Drafts
+                </span>
               </div>
 
               <div className="mt-4 flex-1" />
 
               <div className="mt-4 flex flex-col gap-1 text-xs font-semibold">
                 <a
-                  href="/projects/makers-bnb"
+                  href="/projects/oil-for-the-journey"
                   className="inline-flex items-center text-[#9AE1FF] transition hover:text-white"
                 >
-                  View project details
+                  View case study
                   <span className="ml-1">↗</span>
                 </a>
                 <a
-                  href="https://github.com/JoshHil97/makersbnb-case-study"
+                  href="https://oilfor.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center text-white/70 transition hover:text-white"
                 >
-                  View code
+                  Live site
                   <span className="ml-1">↗</span>
                 </a>
               </div>
@@ -511,6 +532,66 @@ export default function HomePage() {
                   className="inline-flex items-center text-[#9AE1FF] transition hover:text-white"
                 >
                   View case study
+                  <span className="ml-1">↗</span>
+                </a>
+              </div>
+            </motion.article>
+
+            {/* Makers BnB CARD */}
+            <motion.article
+              whileHover={{
+                y: -6,
+                scale: 1.015,
+                boxShadow: "0 18px 45px rgba(0,0,0,0.6)",
+              }}
+              whileTap={{ scale: 0.99 }}
+              transition={{ type: "spring", stiffness: 260, damping: 22 }}
+              className="flex flex-col rounded-2xl border border-white/10 bg-[#090B1C] p-5"
+            >
+              <div className="mb-3 overflow-hidden rounded-xl border border-white/5 bg-black/40">
+                <img
+                  src="/screenshots/makersbnb.png"
+                  alt="Makers BnB UI"
+                  className="h-32 w-full object-cover"
+                />
+              </div>
+
+              <h3 className="text-sm font-semibold text-white">
+                Makers BnB Project
+              </h3>
+
+              <p className="mt-2 text-xs text-white/70">
+                Airbnb style booking platform built as a final team project at
+                Makers Academy.
+              </p>
+
+              <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Full stack
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Bookings
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">TDD</span>
+              </div>
+
+              <div className="mt-4 flex-1" />
+
+              <div className="mt-4 flex flex-col gap-1 text-xs font-semibold">
+                <a
+                  href="/projects/makers-bnb"
+                  className="inline-flex items-center text-[#9AE1FF] transition hover:text-white"
+                >
+                  View case study
+                  <span className="ml-1">↗</span>
+                </a>
+                <a
+                  href="https://github.com/JoshHil97/makersbnb-case-study"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center text-white/70 transition hover:text-white"
+                >
+                  View code
                   <span className="ml-1">↗</span>
                 </a>
               </div>

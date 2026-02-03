@@ -57,22 +57,22 @@ export default function Navbar() {
             </Link>
           ))}
 
-          {/* CTA: Makers BnB Project */}
+          {/* CTA: Featured project */}
           <Link
-            href="#makers-bnb"
+            href="#oil-for-the-journey"
             className="rounded-full bg-gradient-to-r from-[#6C63FF] via-[#9AE1FF] to-[#6C63FF] px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#050716] shadow-[0_0_24px_rgba(154,225,255,0.9)] transition hover:brightness-110"
           >
-            Makers BnB Project
+            Oil for the Journey
           </Link>
         </nav>
 
         {/* Mobile: just show CTA button */}
         <div className="flex items-center gap-2 md:hidden">
           <Link
-            href="#makers-bnb"
+            href="#oil-for-the-journey"
             className="rounded-full bg-gradient-to-r from-[#6C63FF] to-[#9AE1FF] px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-[#050716] shadow-[0_0_18px_rgba(154,225,255,0.9)]"
           >
-            Makers BnB
+            Oil for the Journey
           </Link>
         </div>
       </div>
