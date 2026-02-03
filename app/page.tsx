@@ -192,6 +192,15 @@ export default function HomePage() {
                 Live site
                 <span className="ml-2">↗</span>
               </a>
+              <a
+                href="https://github.com/JoshHil97/vbci-notes"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 backdrop-blur-md transition hover:border-[#9AE1FF]/70 hover:text-white"
+              >
+                View code
+                <span className="ml-2">↗</span>
+              </a>
             </div>
           </div>
 
@@ -479,6 +488,15 @@ export default function HomePage() {
                   className="inline-flex items-center text-white/70 transition hover:text-white"
                 >
                   Live site
+                  <span className="ml-1">↗</span>
+                </a>
+                <a
+                  href="https://github.com/JoshHil97/vbci-notes"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center text-white/70 transition hover:text-white"
+                >
+                  View code
                   <span className="ml-1">↗</span>
                 </a>
               </div>

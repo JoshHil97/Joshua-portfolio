@@ -86,6 +86,15 @@ export default function OilForTheJourneyPage() {
                                 Live site
                                 <span className="ml-2">↗</span>
                             </a>
+                            <a
+                                href="https://github.com/JoshHil97/vbci-notes"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-5 py-2 text-white/80 transition hover:border-[#9AE1FF]/70 hover:text-white"
+                            >
+                                View code on GitHub
+                                <span className="ml-2">↗</span>
+                            </a>
                         </div>
                     </section>
 
@@ -377,4 +386,3 @@ export default function OilForTheJourneyPage() {
         </PageTransition>
     );
 }
-
