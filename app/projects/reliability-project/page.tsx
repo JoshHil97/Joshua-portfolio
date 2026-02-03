@@ -326,7 +326,7 @@ Body: {"{"}"message":"Not Found"{"}"}
                         </ul>
                         <p className="mt-4 text-sm text-white/80">
                             One sentence summary: Rather than masking failures, we used ALB
-                            allowlisting and traffic control to reduce backend crashes, so
+                            allow listing and traffic control to reduce backend crashes, so
                             reliability improvements reflected real system health.
                         </p>
                     </section>
