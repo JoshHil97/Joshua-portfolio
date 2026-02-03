@@ -345,8 +345,8 @@ export default function HomePage() {
               <JourneyItemRight
                 label="Reliability"
                 title="Reliability Project"
-                body="A reliability focused project improving a veterinary hospital system. My team was STABL, and we pushed our environment up to a 99.99% success rate after tracking image screening failures and fixing the root cause."
-                tags={["STABL", "Dashboard", "Debugging"]}
+                body="Reliability work where my team STABL improved a fragile HOSP backend without changing app code. We used ALB access logs and Athena to find failing routes, then allow listed valid paths and returned 404 for everything else."
+                tags={["STABL", "ALB", "Athena"]}
               />
 
               {/* 7 – VBCI Church Directory */}
@@ -487,8 +487,8 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                STABL team project focused on monitoring, debugging, and pushing
-                reliability to a 99.99% success rate.
+                STABL team reliability work using ALB logs and Athena, plus ALB
+                allow listing to reduce backend crashes without faking success.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -496,10 +496,10 @@ export default function HomePage() {
                   STABL
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  99.99%
+                  ALB rules
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Debugging
+                  99.99%
                 </span>
               </div>
 
