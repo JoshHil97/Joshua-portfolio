@@ -345,8 +345,8 @@ export default function HomePage() {
               <JourneyItemRight
                 label="Reliability"
                 title="Reliability Project"
-                body="A reliability focused project improving a simulated veterinary hospital system. I tracked success rates, investigated failures, and rolled out fixes through a load balancer."
-                tags={["Observability", "Load balancer", "Security"]}
+                body="A reliability focused project improving a veterinary hospital system. I monitored success rates across stabl, tlbs, and tea, and investigated image screening failures caused by invalid JSON responses."
+                tags={["Dashboard", "Success rate", "Debugging"]}
               />
 
               {/* 7 – VBCI Church Directory */}
@@ -476,8 +476,12 @@ export default function HomePage() {
             >
               <div className="mb-3 overflow-hidden rounded-xl border border-white/5 bg-black/40">
                 <img
-                  src="/screenshots/reliability-dashboard.svg"
-                  alt="Reliability dashboard"
+                  src="/screenshots/reliability-panel.png"
+                  onError={(e) => {
+                    e.currentTarget.src =
+                      "/screenshots/reliability-dashboard.svg";
+                  }}
+                  alt="Control panel dashboard showing success rates and failures"
                   className="h-32 w-full object-cover"
                 />
               </div>
@@ -487,19 +491,19 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                Reliability focused work on a veterinary hospital system, using
-                monitoring, security improvements, and safe rollouts.
+                Monitored success rates across stabl, tlbs, and tea, and tracked
+                image screening failures in the dashboard.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Observability
+                  Dashboard
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Load balancer
+                  Success rate
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Security
+                  Image screening
                 </span>
               </div>
 

@@ -23,23 +23,23 @@ export default function ReliabilityProjectPage() {
                         </h1>
                         <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
                             A reliability focused project built around a simulated production
-                            system used by veterinary hospitals. The system stores patient notes
-                            and medical images, so it needs to stay available, respond
-                            consistently, and remain secure.
+                            system used by veterinary hospitals. I used a simple control panel
+                            to monitor request success rates and investigate image screening
+                            failures across multiple hosts.
                         </p>
 
                         <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">
                             <span className="rounded-full bg-white/5 px-3 py-1">
-                                Observability
+                                Monitoring dashboard
                             </span>
                             <span className="rounded-full bg-white/5 px-3 py-1">
-                                Load balancing
+                                Success rate tracking
                             </span>
                             <span className="rounded-full bg-white/5 px-3 py-1">
-                                Security
+                                Image screening
                             </span>
                             <span className="rounded-full bg-white/5 px-3 py-1">
-                                Incident response
+                                Debugging
                             </span>
                         </div>
                     </section>
@@ -48,14 +48,19 @@ export default function ReliabilityProjectPage() {
                     <section className="mt-10">
                         <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/40">
                             <img
-                                src="/screenshots/reliability-dashboard.svg"
-                                alt="Reliability dashboard showing success rates and failures"
+                                src="/screenshots/reliability-panel.png"
+                                onError={(e) => {
+                                    e.currentTarget.src =
+                                        "/screenshots/reliability-dashboard.svg";
+                                }}
+                                alt="Control panel dashboard showing success rates by host and image screening failures"
                                 className="w-full object-cover"
                             />
                         </div>
                         <p className="mt-3 text-xs text-white/55">
-                            Screenshot placeholder. Replace this with your real dashboard
-                            screenshots when ready.
+                            The dashboard shows success rates by host and highlights image
+                            screening failures. On Jan 12, 2026, one host dropped to 88.07% over
+                            the past 24 hours due to repeated invalid JSON responses.
                         </p>
                     </section>
 
@@ -66,15 +71,15 @@ export default function ReliabilityProjectPage() {
                                 Project overview
                             </h2>
                             <p>
-                                The brief was simple but real world: keep the existing product
-                                working for staff, improve reliability, and make sure there are
-                                no security breaches. We had API documentation and access to a
-                                load balancer, so monitoring and controlled rollouts mattered.
+                                The project was about keeping a critical system usable for staff
+                                while improving reliability and avoiding security issues. The
+                                control panel made it easy to compare hosts and see exactly when
+                                things were failing.
                             </p>
                             <p>
-                                I used success rate data and failure logs to spot where requests
-                                were breaking down, then shipped fixes and improvements in small
-                                steps so we could measure impact.
+                                The biggest signal was the image screening feature returning
+                                invalid JSON on one host, which dragged the success rate down.
+                                I used the dashboard to track impact while I investigated.
                             </p>
                         </div>
 
@@ -84,16 +89,20 @@ export default function ReliabilityProjectPage() {
                             </h3>
                             <ul className="space-y-2">
                                 <li>
-                                    <span className="text-white/50">Target:</span> 99% request
-                                    success rate
+                                    <span className="text-white/50">Hosts:</span> stabl, tlbs,
+                                    tea
                                 </li>
                                 <li>
-                                    <span className="text-white/50">Target:</span> No security
-                                    breaches
+                                    <span className="text-white/50">Example (Jan 12, 2026):</span>{" "}
+                                    stabl 88.07%, tlbs 97.07%, tea 94.92% (past 24 hours)
                                 </li>
                                 <li>
-                                    <span className="text-white/50">Focus:</span> Monitoring,
-                                    reliability, and security
+                                    <span className="text-white/50">Signal:</span> Image screening
+                                    failures with invalid JSON responses
+                                </li>
+                                <li>
+                                    <span className="text-white/50">Goal:</span> 99% request
+                                    success rate and no security breaches
                                 </li>
                             </ul>
                         </aside>
@@ -107,17 +116,16 @@ export default function ReliabilityProjectPage() {
                             </h2>
                             <ul className="mt-4 space-y-3 text-sm leading-relaxed text-white/80">
                                 <li>
-                                    Monitored request success rates and investigated failures
-                                    such as invalid responses from the image screening feature.
+                                    Used the control panel to monitor request success rates by
+                                    host over different time windows.
                                 </li>
                                 <li>
-                                    Used load balancer routing to compare environments and roll
-                                    out changes safely.
+                                    Investigated image screening failures on the stabl host where
+                                    requests were returning invalid JSON.
                                 </li>
                                 <li>
-                                    Implemented improvements focused on reliability and security,
-                                    including tightening access and adding better visibility into
-                                    system activity.
+                                    Compared results across hosts to validate improvements and
+                                    focus on the highest impact issues.
                                 </li>
                             </ul>
                         </div>
