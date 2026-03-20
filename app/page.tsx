@@ -418,8 +418,8 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="max-w-md text-sm text-white/65">
-              Full stack web, real client style work, and mobile projects, with
-              Oil for the Journey as the centrepiece.
+              Product-led full stack builds, practical recommendation engines,
+              and CRM workflows designed for real users.
             </p>
           </div>
 
@@ -492,6 +492,156 @@ export default function HomePage() {
                 </a>
                 <a
                   href="https://github.com/JoshHil97/vbci-notes"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center text-white/70 transition hover:text-white"
+                >
+                  View code
+                  <span className="ml-1">↗</span>
+                </a>
+              </div>
+            </motion.article>
+
+            {/* Side Hustle Matcher CARD */}
+            <motion.article
+              whileHover={{
+                y: -6,
+                scale: 1.015,
+                boxShadow: "0 18px 45px rgba(0,0,0,0.6)",
+              }}
+              whileTap={{ scale: 0.99 }}
+              transition={{ type: "spring", stiffness: 260, damping: 22 }}
+              className="flex flex-col rounded-2xl border border-white/10 bg-[#090B1C] p-5"
+            >
+              <div className="mb-3 overflow-hidden rounded-xl border border-white/5 bg-black/40">
+                <img
+                  src="/screenshots/side-hustle-matcher-placeholder.svg"
+                  alt="Side Hustle Matcher project preview"
+                  className="h-32 w-full object-cover"
+                  onError={(event) => {
+                    const img = event.currentTarget;
+                    img.onerror = null;
+                    img.src = "/screenshots/oilfor-placeholder.svg";
+                  }}
+                />
+              </div>
+
+              <h3 className="text-sm font-semibold text-white">
+                Side Hustle Matcher
+              </h3>
+
+              <p className="mt-2 text-xs text-white/70">
+                A practical recommendation quiz that maps role signals, skills,
+                and constraints into personalised side-hustle options.
+              </p>
+
+              <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Next.js
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  TypeScript
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Recommendation Engine
+                </span>
+              </div>
+
+              <div className="mt-4 flex-1" />
+
+              <div className="mt-4 flex flex-col gap-1 text-xs font-semibold">
+                <a
+                  href="/projects/side-hustle-matcher"
+                  className="inline-flex items-center text-[#9AE1FF] transition hover:text-white"
+                >
+                  View case study
+                  <span className="ml-1">↗</span>
+                </a>
+                <a
+                  href="https://side-hustle-matcher.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center text-white/70 transition hover:text-white"
+                >
+                  Live site
+                  <span className="ml-1">↗</span>
+                </a>
+                <a
+                  href="https://github.com/JoshHil97/Side-Hustle-Matcher"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center text-white/70 transition hover:text-white"
+                >
+                  View code
+                  <span className="ml-1">↗</span>
+                </a>
+              </div>
+            </motion.article>
+
+            {/* Application Command Centre CARD */}
+            <motion.article
+              whileHover={{
+                y: -6,
+                scale: 1.015,
+                boxShadow: "0 18px 45px rgba(0,0,0,0.6)",
+              }}
+              whileTap={{ scale: 0.99 }}
+              transition={{ type: "spring", stiffness: 260, damping: 22 }}
+              className="flex flex-col rounded-2xl border border-white/10 bg-[#090B1C] p-5"
+            >
+              <div className="mb-3 overflow-hidden rounded-xl border border-white/5 bg-black/40">
+                <img
+                  src="/screenshots/application-command-center-placeholder.svg"
+                  alt="Application Command Centre project preview"
+                  className="h-32 w-full object-cover"
+                  onError={(event) => {
+                    const img = event.currentTarget;
+                    img.onerror = null;
+                    img.src = "/screenshots/oilfor-placeholder.svg";
+                  }}
+                />
+              </div>
+
+              <h3 className="text-sm font-semibold text-white">
+                Application Command Centre
+              </h3>
+
+              <p className="mt-2 text-xs text-white/70">
+                A premium job application CRM with pipeline tracking, reminders,
+                templates, analytics, and secure multi-user data controls.
+              </p>
+
+              <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Next.js
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Supabase
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">CRM</span>
+              </div>
+
+              <div className="mt-4 flex-1" />
+
+              <div className="mt-4 flex flex-col gap-1 text-xs font-semibold">
+                <a
+                  href="/projects/application-command-center"
+                  className="inline-flex items-center text-[#9AE1FF] transition hover:text-white"
+                >
+                  View case study
+                  <span className="ml-1">↗</span>
+                </a>
+                <a
+                  href="https://application-command-center.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center text-white/70 transition hover:text-white"
+                >
+                  Live site
+                  <span className="ml-1">↗</span>
+                </a>
+                <a
+                  href="https://github.com/JoshHil97/application-command-center"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center text-white/70 transition hover:text-white"
