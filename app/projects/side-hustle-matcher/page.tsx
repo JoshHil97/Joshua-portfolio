@@ -88,8 +88,8 @@ export default function SideHustleMatcherPage() {
           <section className="mt-10">
             <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/40">
               <img
-                src="/screenshots/side-hustle-matcher-placeholder.svg"
-                alt="Side Hustle Matcher project preview"
+                src="/screenshots/side-hustle-landing.png"
+                alt="Side Hustle Matcher landing page"
                 className="w-full"
                 onError={(event) => {
                   const img = event.currentTarget;
@@ -99,8 +99,7 @@ export default function SideHustleMatcherPage() {
               />
             </div>
             <p className="mt-3 text-xs text-white/55">
-              Hero preview placeholder. This will be replaced with your final Side Hustle Matcher
-              homepage screenshot.
+              Landing experience with a clear practical promise and a three-step explanation of the matching logic.
             </p>
           </section>
 
@@ -197,22 +196,37 @@ export default function SideHustleMatcherPage() {
           </section>
 
           <section className="mt-16">
-            <h2 className="text-lg font-semibold text-white sm:text-xl">Screenshots</h2>
+            <h2 className="text-lg font-semibold text-white sm:text-xl">Product walkthrough screenshots</h2>
             <p className="mt-2 max-w-2xl text-sm text-white/70">
-              Placeholders are set below and will be swapped with your final screenshots as soon as
-              you share them.
+              End-to-end flow from quiz input through ranked recommendations, explanation layers,
+              comparison tables, and launch planning.
             </p>
 
             <div className="mt-6 grid gap-6 md:grid-cols-2">
               <Screenshot
-                src="/screenshots/side-hustle-matcher-placeholder.svg"
-                alt="Side Hustle Matcher placeholder one"
-                caption="Placeholder for the landing page screenshot."
+                src="/screenshots/side-hustle-quiz-role-family.png"
+                alt="Side Hustle Matcher quiz role-family step"
+                caption="Quiz flow with one question per step and visible progress."
               />
               <Screenshot
-                src="/screenshots/side-hustle-matcher-placeholder.svg"
-                alt="Side Hustle Matcher placeholder two"
-                caption="Placeholder for the quiz or results page screenshot."
+                src="/screenshots/side-hustle-scoring-transparency.png"
+                alt="Side Hustle Matcher scoring transparency table"
+                caption="Scoring transparency table used to explain ranking behaviour."
+              />
+              <Screenshot
+                src="/screenshots/side-hustle-commercial-comparison-launch-plan.png"
+                alt="Commercial comparison and launch plan for top match"
+                caption="Commercial comparison and practical launch plan for the top recommendation."
+              />
+              <Screenshot
+                src="/screenshots/side-hustle-alternatives-poor-fit.png"
+                alt="Alternative options and poor-fit warning"
+                caption="Alternative options and a poor-fit warning to improve recommendation trust."
+              />
+              <Screenshot
+                src="/screenshots/side-hustle-top-3-cards.png"
+                alt="Top three recommendation cards with evidence"
+                caption="Top three recommendation cards with evidence, commercial angle, and first-week steps."
               />
             </div>
           </section>

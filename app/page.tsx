@@ -532,7 +532,7 @@ export default function HomePage() {
             >
               <div className="mb-3 overflow-hidden rounded-xl border border-white/5 bg-black/40">
                 <img
-                  src="/screenshots/side-hustle-matcher-placeholder.svg"
+                  src="/screenshots/side-hustle-landing.png"
                   alt="Side Hustle Matcher project preview"
                   className="h-32 w-full object-cover"
                   onError={(event) => {
