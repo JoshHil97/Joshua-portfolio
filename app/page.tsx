@@ -388,7 +388,23 @@ export default function HomePage() {
                 tags={["Next.js", "Supabase", "Full stack web"]}
               />
 
-              {/* 10 – Next steps */}
+                            {/* 10 – Side Hustle Matcher */}
+              <JourneyItemLeft
+                label="Product launch"
+                title="Side Hustle Matcher"
+                body="Built and shipped a practical quiz product that maps role family, tasks, tools, and constraints into realistic side-hustle recommendations with clear commercial next steps."
+                tags={["Next.js", "Scoring engine", "Product strategy"]}
+              />
+
+              {/* 11 – Application Command Centre */}
+              <JourneyItemRight
+                label="Premium SaaS build"
+                title="Application Command Centre"
+                body="Designed and delivered a premium job application CRM with pipeline management, reminders, templates, analytics, and secure multi-user data controls using Supabase RLS."
+                tags={["Next.js", "Supabase", "CRM"]}
+              />
+
+              {/* 12 – Next steps */}
               <JourneyItemLeft
                 label="Coming next"
                 title="Cloud and deeper backend work"
@@ -396,6 +412,7 @@ export default function HomePage() {
                 tags={["Cloud", "Backend", "TypeScript"]}
                 isFuture
               />
+
             </div>
           </motion.div>
         </div>
