@@ -24,11 +24,11 @@ export default function ReliabilityLayerApiPage() {
               Reliability Layer API
             </h1>
             <p className="mt-3 max-w-3xl text-sm text-white/70 sm:text-base">
-              A backend and platform-focused project built to standardise how
-              services talk to upstream dependencies. Instead of scattering
-              timeouts, retries, circuit breaking, cache logic, and metrics
-              across every caller, this project moves those concerns into one
-              shared gateway with clear policies and clear telemetry.
+              I built this backend/platform project to solve a common production
+              problem: reliability logic duplicated across services and handled
+              inconsistently. Instead of scattering timeout, retry, breaker,
+              cache, and metrics behaviour across callers, I centralised these
+              policies into one shared gateway with observable outcomes.
             </p>
 
             <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">
@@ -113,6 +113,10 @@ export default function ReliabilityLayerApiPage() {
                 <li>
                   <span className="text-white/50">Proof points:</span> Docker
                   stack, integration tests, metrics, health endpoints
+                </li>
+                <li>
+                  <span className="text-white/50">Ownership:</span> API design,
+                  resilience policies, tests, and observability setup
                 </li>
               </ul>
             </aside>

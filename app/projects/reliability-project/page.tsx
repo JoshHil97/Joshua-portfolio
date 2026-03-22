@@ -22,10 +22,11 @@ export default function ReliabilityProjectPage() {
                             Reliability Project: Improving HOSP
                         </h1>
                         <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
-                            STABL reliability work built around a simulated production system
-                            used by veterinary hospitals. We sat in front of an existing app
-                            called HOSP, and our job was to improve availability without lying
-                            about system health.
+                            This project tackled a hard reliability constraint: improve
+                            availability on a fragile system we could not rewrite. Working in
+                            team STABL, I focused on traffic evidence analysis and ALB rule
+                            strategy to reduce backend crashes while keeping failure reporting
+                            honest.
                         </p>
 
                         <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">
@@ -104,6 +105,10 @@ export default function ReliabilityProjectPage() {
                                 <li>
                                     <span className="text-white/50">Rule:</span> No fake success
                                     and no masking failures
+                                </li>
+                                <li>
+                                    <span className="text-white/50">My ownership:</span> Athena
+                                    query analysis, rule design, and rollback-safe change flow
                                 </li>
                             </ul>
                         </aside>

@@ -24,10 +24,10 @@ export default function VbciChurchDirectoryPage() {
                             VBCI Church Directory: Member &amp; Ministry Manager
                         </h1>
                         <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
-                            A modern directory to keep track of members, contact details, and
-                            ministries for Victory Bible Church International (VBCI). Built as
-                            a full stack project using Java Spring Boot for the API and a
-                            React + TypeScript frontend styled with Tailwind.
+                            The original process relied on fragmented spreadsheets, so updates
+                            and lookups were slow. I rebuilt it as a full stack directory with
+                            a Spring Boot API and typed React frontend, owning endpoint design,
+                            data modelling, CRUD/search delivery, and frontend integration.
                         </p>
 
                         <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">

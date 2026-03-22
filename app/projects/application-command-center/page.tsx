@@ -50,9 +50,12 @@ export default function ApplicationCommandCenterPage() {
               Application Command Centre: Premium Job CRM
             </h1>
             <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
-              Application Command Centre is a premium job application CRM built for disciplined
-              career execution. It combines a full application pipeline, reminders, templates,
-              document storage, and analytics in one secure workflow.
+              Job seekers often lose opportunities because tracking is split
+              across notes, spreadsheets, and inboxes. I built Application
+              Command Centre to solve that with one structured system for
+              pipeline control, follow-up discipline, and interview readiness.
+              I owned product design, full stack implementation, and data
+              security boundaries.
             </p>
 
             <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">
@@ -138,6 +141,10 @@ export default function ApplicationCommandCenterPage() {
                 <li>
                   <span className="text-white/50">Security:</span> Supabase auth + row-level security
                 </li>
+                <li>
+                  <span className="text-white/50">Ownership:</span> Schema design, server actions,
+                  RLS policies, and dashboard UX
+                </li>
               </ul>
             </aside>
           </section>
@@ -189,10 +196,10 @@ export default function ApplicationCommandCenterPage() {
             <div>
               <h2 className="text-lg font-semibold text-white sm:text-xl">What this project shows</h2>
               <ul className="mt-4 space-y-3 text-sm leading-relaxed text-white/80">
-                <li>Ability to design and ship a commercially credible product workflow end to end.</li>
-                <li>Strong full stack execution across UX, data modelling, validation, and auth boundaries.</li>
-                <li>Practical product thinking: speed, reliability, and usability balanced together.</li>
-                <li>A premium quality interface built with maintainable structure and clean component patterns.</li>
+                <li>Ability to design and ship a commercially credible workflow from concept to production.</li>
+                <li>Full stack ownership across UX, schema design, validation, and auth boundaries.</li>
+                <li>Engineering decisions grounded in operational reliability, not only visual polish.</li>
+                <li>A maintainable architecture that can scale with additional modules and analytics depth.</li>
               </ul>
             </div>
           </section>

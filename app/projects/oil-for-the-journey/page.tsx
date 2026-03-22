@@ -51,11 +51,11 @@ export default function OilForTheJourneyPage() {
                             Oil for the Journey: Reflective Writing Platform
                         </h1>
                         <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
-                            Oil for the Journey is a reflective writing platform built to
-                            support faith focused journaling, teaching notes, and long form
-                            reflections. The goal was a calm reading experience with private
-                            drafting and intentional publishing, without the pressure of
-                            engagement metrics.
+                            Most writing products optimise for speed and attention. I built
+                            Oil for the Journey to solve a different problem: a calm, reliable
+                            space for drafting and publishing reflective long-form content.
+                            I owned full stack delivery, from auth and data flow to responsive
+                            UI and deployment.
                         </p>
 
                         <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">
@@ -158,6 +158,10 @@ export default function OilForTheJourneyPage() {
                                 <li>
                                     <span className="text-white/50">Focus:</span> Readability and
                                     intentional publishing
+                                </li>
+                                <li>
+                                    <span className="text-white/50">Ownership:</span> Product
+                                    direction, implementation, and release workflow
                                 </li>
                             </ul>
                         </aside>

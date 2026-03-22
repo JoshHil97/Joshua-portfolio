@@ -39,7 +39,7 @@ export default function HomePage() {
               <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
                 <span className="block text-white">Joshua Hilarion</span>
                 <span className="mt-2 block text-lg font-normal text-white/60 sm:text-xl">
-                  Building modern apps with clean code and{" "}
+                  Building modern products with clear engineering ownership and{" "}
                   <span className="bg-gradient-to-r from-[#9AE1FF] via-[#6C63FF] to-[#F9F871] bg-clip-text font-semibold text-transparent">
                     smooth, intentional experiences.
                   </span>
@@ -48,15 +48,14 @@ export default function HomePage() {
             </div>
 
             <p className="max-w-xl text-sm text-white/65 sm:text-base">
-              I build full stack web and mobile apps, and I love taking an idea
-              from a rough sketch to something people can actually use. Recent
-              work includes <strong>Oil for the Journey</strong>, a reflective
-              writing platform built with Next.js and Supabase, my personal{" "}
-              <strong>Reliability Layer API</strong>, the{" "}
-              <strong>Reliability Project</strong> with my STABL team, a church
-              directory for VBCI, <strong>Makers BnB</strong> at Makers Academy,
-              and <strong>SoulAnchor</strong>, a React Native encouragement
-              app.
+              I build full stack web and mobile products that solve practical
+              workflow problems. I usually own delivery end to end: schema and
+              API design, responsive UI, integration, testing, and deployment.
+              Recent work includes <strong>Oil for the Journey</strong>, my
+              personal <strong>Reliability Layer API</strong>, the{" "}
+              <strong>Reliability Project</strong> with my STABL team,{" "}
+              <strong>Application Command Centre</strong>, and{" "}
+              <strong>Side Hustle Matcher</strong>.
             </p>
 
             {/* CTAs */}
@@ -87,11 +86,11 @@ export default function HomePage() {
               </div>
               <div className="flex items-center gap-2 rounded-full bg-white/5 px-3 py-1">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#6C63FF]" />
-                Makers Academy · TDD · teamwork
+                API design · data modelling · testing
               </div>
               <div className="flex items-center gap-2 rounded-full bg-white/5 px-3 py-1">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#F9F871]" />
-                React · Spring Boot · React Native
+                Next.js · Spring Boot · React Native
               </div>
             </div>
           </div>
@@ -116,9 +115,9 @@ export default function HomePage() {
                 </div>
 
                 <p className="text-xs text-white/65">
-                  Full stack Next.js app with Supabase authentication and a
-                  draft to publish workflow, built for calm reading and
-                  intentional publishing.
+                  I designed and built the draft-to-publish workflow,
+                  authentication boundaries, and readability-first UI for calm
+                  long-form publishing.
                 </p>
 
                 <div className="mt-3 flex flex-wrap gap-2 text-[11px] text-white/70">
@@ -163,17 +162,18 @@ export default function HomePage() {
             </h2>
 
             <p className="text-sm text-white/70 sm:text-base">
-              <span className="font-semibold">Oil for the Journey</span> is a
-              reflective writing platform designed for faith focused journaling,
-              teaching notes, and long form reflections. The focus is clarity,
-              readability, and intentional publishing, not engagement metrics.
+              <span className="font-semibold">Oil for the Journey</span> solves
+              a real product gap: most writing tools optimise for speed and
+              attention, not reflective long-form work. I built this to support
+              calm drafting, intentional publishing, and a cleaner reading
+              experience.
             </p>
 
             <p className="text-sm text-white/60 sm:text-base">
-              I built it as a full stack Next.js app with Supabase for
-              authentication and data. Notes can be drafted privately, edited
-              over time, and published when ready, with admin controls kept out
-              of sight for public readers.
+              I owned architecture and delivery across the stack: Supabase auth,
+              draft/publish data flow, admin-only controls, responsive layout,
+              and deployment hardening. It taught me how strong UX depends on
+              good engineering decisions behind the scenes.
             </p>
 
             {/* Links */}
@@ -435,8 +435,9 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="max-w-md text-sm text-white/65">
-              Product-led full stack builds, backend reliability tooling, and
-              CRM workflows designed for real users and real operations.
+              Product-led builds with clear ownership: problem framing, data
+              modelling, API and UI delivery, testing, and production-minded
+              iteration.
             </p>
           </div>
 
@@ -472,8 +473,8 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                Reflective writing platform with drafts, admin controls, and a
-                reading first UI.
+                I built a calm publishing workflow with draft states, secure
+                admin controls, and readability-led UI for long-form content.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -548,8 +549,9 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                A practical recommendation quiz that maps role signals, skills,
-                and constraints into personalised side-hustle options.
+                I built a scoring engine that maps role signals to viable
+                side-income offers, then explains fit with commercial next
+                steps.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -624,8 +626,9 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                A premium job application CRM with pipeline tracking, reminders,
-                templates, analytics, and secure multi-user data controls.
+                I designed and shipped a premium job CRM that replaces
+                fragmented tracking with one secure pipeline, reminder, and
+                follow-up workflow.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -693,9 +696,9 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                Personal backend and platform project that centralises timeouts,
-                retries, circuit breaking, caching, rate limiting, and
-                observability for upstream HTTP dependencies.
+                I built a backend reliability gateway that centralises retries,
+                timeouts, circuit breaking, caching, and observability for
+                upstream APIs.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -756,8 +759,9 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                STABL team reliability work using ALB logs and Athena, plus ALB
-                allow listing to reduce backend crashes without faking success.
+                In STABL, I helped push reliability to 99.99% by using
+                ALB/Athena evidence and allow-listing valid routes without fake
+                success metrics.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -809,8 +813,8 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                Airbnb style booking platform built as a final team project at
-                Makers Academy.
+                In a one-week team build, I owned key backend routes, schema
+                decisions, and auth/session flow for listings and bookings.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -870,8 +874,9 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                A real world church member directory built with Spring Boot +
-                React/Tailwind.
+                I rebuilt a spreadsheet workflow into a full-stack directory,
+                owning Spring Boot endpoints, data model, and typed React UI
+                integration.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -940,8 +945,8 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                A React Native app offering verses, messages, and prayer based
-                on emotion.
+                I designed and implemented an emotion-based mobile experience
+                with structured content, saved anchors, and calming interactions.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -1012,8 +1017,8 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                A data focused accountability dashboard for tracking habits and
-                lifestyle metrics using Streamlit.
+                I built a data-focused Streamlit dashboard to track habits and
+                weekly trends, making personal progress easy to review quickly.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -1065,58 +1070,41 @@ export default function HomePage() {
             </div>
 
             <p className="max-w-md text-sm text-white/65">
-              A foundation in full stack web and mobile development, with a
-              focus on clean code, problem solving, and collaborative
-              engineering.
+              A recruiter-ready view of what I can ship confidently now, where
+              I can contribute with support, and what I am actively levelling
+              up.
             </p>
           </div>
 
           {/* Skill Cards */}
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {/* Languages */}
-            <div className="rounded-2xl border border-white/10 bg-[#090B1C] p-5">
-              <h3 className="text-sm font-semibold text-white">Languages</h3>
-              <p className="mt-1 text-xs text-white/50">
-                Comfortable across backend, frontend, and scripting.
-              </p>
-
-              <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/85">
-                <span className="rounded-full bg-white/5 px-2 py-1">Java</span>
-                <span className="rounded-full bg-white/5 px-2 py-1">
-                  JavaScript
-                </span>
-                <span className="rounded-full bg-white/5 px-2 py-1">
-                  TypeScript
-                </span>
-                <span className="rounded-full bg-white/5 px-2 py-1">
-                  Python
-                </span>
-                <span className="rounded-full bg-white/5 px-2 py-1">SQL</span>
-              </div>
-            </div>
-
-            {/* Frameworks */}
+            {/* Strongest stack */}
             <div className="rounded-2xl border border-white/10 bg-[#090B1C] p-5">
               <h3 className="text-sm font-semibold text-white">
-                Frameworks &amp; Libraries
+                Strongest / production-ready
               </h3>
               <p className="mt-1 text-xs text-white/50">
-                Tools for building full stack and mobile experiences.
+                Technologies I am most confident using in end-to-end delivery.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/85">
-                <span className="rounded-full bg-white/5 px-2 py-1">React</span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  React Native
-                </span>
-                <span className="rounded-full bg-white/5 px-2 py-1">
-                  Spring Boot
+                  TypeScript
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
                   Next.js
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Express
+                  React
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Spring Boot
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  SQL / PostgreSQL
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  REST API design
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
                   Tailwind CSS
@@ -1124,23 +1112,62 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Tools */}
+            {/* Working knowledge */}
             <div className="rounded-2xl border border-white/10 bg-[#090B1C] p-5">
-              <h3 className="text-sm font-semibold text-white">Tools</h3>
+              <h3 className="text-sm font-semibold text-white">
+                Working knowledge
+              </h3>
               <p className="mt-1 text-xs text-white/50">
-                Everyday essentials for building and shipping.
+                Tools I can contribute with and deepen quickly in delivery teams.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/85">
-                <span className="rounded-full bg-white/5 px-2 py-1">Git</span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  GitHub
+                  React Native
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Java
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Python
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Express
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Supabase
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
                   Postman
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Docker (learning)
+                  Git / GitHub
+                </span>
+              </div>
+            </div>
+
+            {/* Learning now */}
+            <div className="rounded-2xl border border-white/10 bg-[#090B1C] p-5">
+              <h3 className="text-sm font-semibold text-white">
+                Currently learning
+              </h3>
+              <p className="mt-1 text-xs text-white/50">
+                Platform engineering areas I am actively building stronger depth
+                in.
+              </p>
+
+              <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/85">
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Docker
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  AWS fundamentals
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Platform reliability patterns
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Monitoring and observability
                 </span>
               </div>
             </div>
@@ -1205,7 +1232,8 @@ export default function HomePage() {
             </div>
 
             <p className="max-w-md text-sm text-white/65">
-              A story of curiosity, persistence, and creative problem solving.
+              How I moved from curiosity to shipping reliable, user-facing
+              products with clear engineering ownership.
             </p>
           </div>
 
@@ -1214,27 +1242,28 @@ export default function HomePage() {
             {/* LEFT COLUMN — Story */}
             <div className="space-y-6 text-sm leading-relaxed text-white/80 sm:text-base">
               <p>
-                I started exploring code during lockdown. I kept thinking,
-                “nothing comes from nothing,” so I started building. Debugging
-                became a challenge I genuinely enjoyed.
+                I started coding during lockdown and quickly got drawn to the
+                problem-solving side of engineering. Debugging went from
+                frustrating to genuinely satisfying once I learned how to break
+                problems down systematically.
               </p>
 
               <p>
-                Joining <strong>Makers Academy</strong> solidified everything. It
-                wasn’t just about learning syntax. I learned how to think like
-                an engineer. TDD, pair programming, clean code, version control,
-                and how to build real products as a team.
+                Joining <strong>Makers Academy</strong> gave me the engineering
+                discipline to turn that interest into delivery: TDD, pair
+                programming, version control, and building production-style
+                workflows as a team.
               </p>
 
               <p>
-                Since then, I&apos;ve built full stack apps and mobile experiences.
-                <strong> Makers BnB</strong> taught me more about engineering
-                practices than anything else.
+                Since then, I&apos;ve shipped full stack and mobile projects
+                where I regularly own schema/API decisions, integration, and UX
+                quality from first build to deployment.
               </p>
 
               <p>
-                At my core, I love building things that feel smooth, intentional,
-                and genuinely helpful for people.
+                I care most about building products that are useful, reliable,
+                and maintainable, not just visually polished.
               </p>
             </div>
 
@@ -1248,16 +1277,17 @@ export default function HomePage() {
               </p>
 
               <p>
-                I’m driven by growth. Whether it’s trying a new stack, refactoring
-                code to be cleaner, or helping someone understand a concept, I
-                love that tech gives me space to constantly level up.
+                I’m driven by growth. Whether it’s learning platform tooling,
+                refactoring for clarity, or improving test coverage, I treat
+                each project as a chance to raise my engineering standard.
               </p>
 
               <p>
                 My long term goal:{" "}
                 <strong>
-                  become an engineer who builds meaningful products, uplifts
-                  teams, and keeps learning fast.
+                  become an engineer who ships meaningful products, contributes
+                  strongly in collaborative teams, and keeps compounding
+                  technical depth.
                 </strong>
               </p>
             </div>
@@ -1281,8 +1311,9 @@ export default function HomePage() {
             </h2>
 
             <p className="mt-3 max-w-xl text-sm text-white/65 sm:text-base">
-              Open to junior software engineer and full stack roles. If my work
-              resonates with you, I&apos;d love to hear from you.
+              Open to junior software engineer, full stack, and platform-focused
+              roles in London or hybrid environments. If you need an engineer
+              who can own features and ship cleanly, I&apos;d love to connect.
             </p>
 
             {/* Main CTA buttons */}

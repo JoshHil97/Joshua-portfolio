@@ -24,10 +24,11 @@ export default function SoulAnchorPage() {
                             SoulAnchor: Emotion Based Encouragement App
                         </h1>
                         <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
-                            A React Native app that lets users choose how they&apos;re feeling
-                            and receive a tailored Bible verse, short encouragement, and
-                            guided prayer. Built with animated gradients, 30+ emotion states,
-                            and a simple &quot;saved anchors&quot; system.
+                            I built SoulAnchor to solve a practical emotional UX problem:
+                            people need support that matches how they actually feel, not generic
+                            content feeds. I owned the mobile interaction model, structured
+                            emotion data, and implementation of the selection, save, and replay
+                            flows.
                         </p>
 
                         <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">

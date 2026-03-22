@@ -50,9 +50,10 @@ export default function SideHustleMatcherPage() {
               Side Hustle Matcher: Practical Recommendation Engine
             </h1>
             <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
-              Side Hustle Matcher helps 9 to 5 professionals find realistic side-income options
-              using what they already do at work. It focuses on practical fit: role signals,
-              weekly tasks, tools, outputs, constraints, and commercial potential.
+              Most side-hustle advice is generic and commercially weak. I built
+              this product to solve that by turning real work signals into ranked
+              options users can actually deliver and sell. I owned the scoring
+              engine, explanation layer, and premium results UX from end to end.
             </p>
 
             <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">
@@ -135,6 +136,10 @@ export default function SideHustleMatcherPage() {
                 <li>
                   <span className="text-white/50">Focus:</span> Practical fit and explainability
                 </li>
+                <li>
+                  <span className="text-white/50">Ownership:</span> Quiz design, data model,
+                  scoring logic, and explanation copy
+                </li>
               </ul>
             </aside>
           </section>
@@ -177,10 +182,10 @@ export default function SideHustleMatcherPage() {
             <div>
               <h2 className="text-lg font-semibold text-white sm:text-xl">What this project demonstrates</h2>
               <ul className="mt-4 space-y-3 text-sm leading-relaxed text-white/80">
-                <li>Designing recommendation logic that is editable, traceable, and production-minded.</li>
-                <li>Turning domain research into a structured data model for fast iteration.</li>
-                <li>Building conversion-friendly UX with practical copy and strong information hierarchy.</li>
-                <li>Shipping a complete MVP with clear growth paths for data and model improvements.</li>
+                <li>Designing recommendation logic that is editable, traceable, and commercially useful.</li>
+                <li>Translating research into a practical schema that supports rapid product iteration.</li>
+                <li>Building a conversion-friendly results flow that explains ranking decisions clearly.</li>
+                <li>Owning delivery from product framing through implementation and launch-ready polish.</li>
               </ul>
             </div>
 

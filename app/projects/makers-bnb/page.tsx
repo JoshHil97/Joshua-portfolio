@@ -24,10 +24,11 @@ export default function MakersBnbPage() {
                             Makers BnB: Accommodation Booking Platform
                         </h1>
                         <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
-                            An Airbnb style booking platform built in a week long team project
-                            at Makers Academy. Users can register, list properties, browse
-                            spaces, and request bookings. Everything is backed by a PostgreSQL
-                            database and a test driven Ruby backend.
+                            This project solved the core booking workflow problem from scratch:
+                            users needed to list spaces, request dates, and avoid booking
+                            clashes. In a one-week team sprint, I focused on backend delivery,
+                            schema design, auth/session flow, and test coverage in a TDD-first
+                            setup.
                         </p>
 
                         <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">
@@ -111,7 +112,7 @@ export default function MakersBnbPage() {
                                 </li>
                                 <li>
                                     <span className="text-white/50">Role:</span> Backend
-                                    lead &amp; database design
+                                    routes, schema design, auth/session flow
                                 </li>
                                 <li>
                                     <span className="text-white/50">Stack:</span> Ruby, Sinatra,
