@@ -608,7 +608,7 @@ export default function HomePage() {
             >
               <div className="mb-3 overflow-hidden rounded-xl border border-white/5 bg-black/40">
                 <img
-                  src="/screenshots/application-command-center-placeholder.svg"
+                  src="/screenshots/application-command-landing.png"
                   alt="Application Command Centre project preview"
                   className="h-32 w-full object-cover"
                   onError={(event) => {

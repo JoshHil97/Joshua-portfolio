@@ -88,8 +88,8 @@ export default function ApplicationCommandCenterPage() {
           <section className="mt-10">
             <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/40">
               <img
-                src="/screenshots/application-command-center-placeholder.svg"
-                alt="Application Command Centre project preview"
+                src="/screenshots/application-command-landing.png"
+                alt="Application Command Centre landing page"
                 className="w-full"
                 onError={(event) => {
                   const img = event.currentTarget;
@@ -99,7 +99,7 @@ export default function ApplicationCommandCenterPage() {
               />
             </div>
             <p className="mt-3 text-xs text-white/55">
-              Hero preview placeholder. This will be replaced with your final CRM dashboard screenshot.
+              Landing experience with a clear value proposition for interview readiness and organised pipeline execution.
             </p>
           </section>
 
@@ -198,22 +198,52 @@ export default function ApplicationCommandCenterPage() {
           </section>
 
           <section className="mt-16">
-            <h2 className="text-lg font-semibold text-white sm:text-xl">Screenshots</h2>
+            <h2 className="text-lg font-semibold text-white sm:text-xl">Product walkthrough screenshots</h2>
             <p className="mt-2 max-w-2xl text-sm text-white/70">
-              Placeholders are set below and will be replaced with your final dashboard and workflow
-              screenshots when you send them.
+              Full workflow coverage from overview to application creation, including directories,
+              templates, document handling, and analytics.
             </p>
 
             <div className="mt-6 grid gap-6 md:grid-cols-2">
               <Screenshot
-                src="/screenshots/application-command-center-placeholder.svg"
-                alt="Application Command Centre placeholder one"
-                caption="Placeholder for the main dashboard screenshot."
+                src="/screenshots/application-command-overview.png"
+                alt="Application Command Centre overview dashboard"
+                caption="Overview dashboard with key pipeline metrics, reminders, and recent activity blocks."
               />
               <Screenshot
-                src="/screenshots/application-command-center-placeholder.svg"
-                alt="Application Command Centre placeholder two"
-                caption="Placeholder for applications or analytics workflow screenshot."
+                src="/screenshots/application-command-applications.png"
+                alt="Application Command Centre applications page"
+                caption="Applications module with filters, sorting, bulk actions, and CSV export."
+              />
+              <Screenshot
+                src="/screenshots/application-command-companies.png"
+                alt="Application Command Centre companies directory"
+                caption="Companies module for interview process notes, salary notes, and linked records."
+              />
+              <Screenshot
+                src="/screenshots/application-command-contacts.png"
+                alt="Application Command Centre contacts directory"
+                caption="Contacts module for recruiter and hiring manager records with quick linking."
+              />
+              <Screenshot
+                src="/screenshots/application-command-documents.png"
+                alt="Application Command Centre documents library"
+                caption="Documents library with upload fields, category filters, and application attachment."
+              />
+              <Screenshot
+                src="/screenshots/application-command-templates.png"
+                alt="Application Command Centre template vault"
+                caption="Template vault for reusable blocks across cover letters and interview responses."
+              />
+              <Screenshot
+                src="/screenshots/application-command-analytics.png"
+                alt="Application Command Centre analytics dashboard"
+                caption="Analytics dashboard section designed for weekly tracking and funnel visibility."
+              />
+              <Screenshot
+                src="/screenshots/application-command-new-application.png"
+                alt="Application Command Centre new application form"
+                caption="Comprehensive new-application form with role data, status, dates, and job snapshot fields."
               />
             </div>
           </section>
