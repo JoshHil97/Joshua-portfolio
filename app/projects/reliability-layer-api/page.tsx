@@ -118,8 +118,25 @@ export default function ReliabilityLayerApiPage() {
                   <span className="text-white/50">Ownership:</span> API design,
                   resilience policies, tests, and observability setup
                 </li>
+                <li>
+                  <span className="text-white/50">Technical highlight:</span>{" "}
+                  Implemented bounded retries, timeout budgets, circuit breaking,
+                  and stale-cache fallback in the shared request pipeline.
+                </li>
               </ul>
             </aside>
+          </section>
+
+          <section className="mt-10 rounded-2xl border border-white/10 bg-[#090B1C] p-5 text-sm text-white/80">
+            <h2 className="text-lg font-semibold text-white sm:text-xl">
+              Challenge and solution
+            </h2>
+            <p className="mt-3 leading-relaxed">
+              One challenge was preventing retry storms when upstream services
+              degraded. I solved it by capping retries with jitter, enforcing
+              idempotency rules, and opening circuit breakers on repeated
+              failures, which kept degraded behaviour controlled and observable.
+            </p>
           </section>
 
           <section className="mt-14 space-y-4">

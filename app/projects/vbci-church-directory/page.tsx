@@ -123,8 +123,24 @@ export default function VbciChurchDirectoryPage() {
                                 <li>Implemented CRUD operations for members &amp; ministries.</li>
                                 <li>Built the React UI using TypeScript and Tailwind.</li>
                                 <li>Integrated the frontend with the Spring Boot backend.</li>
+                                <li>
+                                    Technical highlight: designed searchable endpoint/query
+                                    patterns for name, email, and ministry filtering.
+                                </li>
                             </ul>
                         </aside>
+                    </section>
+
+                    <section className="mt-10 rounded-2xl border border-white/10 bg-[#090B1C] p-5 text-sm text-white/80">
+                        <h2 className="text-lg font-semibold text-white sm:text-xl">
+                            Challenge and solution
+                        </h2>
+                        <p className="mt-3 leading-relaxed">
+                            One challenge was replacing spreadsheet habits with a workflow people
+                            could adopt quickly. I solved it by building straightforward CRUD +
+                            live search interactions with a familiar layout, which made updates
+                            faster and reduced lookup friction for real users.
+                        </p>
                     </section>
 
                     {/* Features */}

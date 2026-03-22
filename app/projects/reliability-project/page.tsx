@@ -110,8 +110,25 @@ export default function ReliabilityProjectPage() {
                                     <span className="text-white/50">My ownership:</span> Athena
                                     query analysis, rule design, and rollback-safe change flow
                                 </li>
+                                <li>
+                                    <span className="text-white/50">Technical highlight:</span>{" "}
+                                    Used Athena queries against ALB logs to isolate failing
+                                    routes by method and status-code patterns.
+                                </li>
                             </ul>
                         </aside>
+                    </section>
+
+                    <section className="mt-10 rounded-2xl border border-white/10 bg-[#090B1C] p-5 text-sm text-white/80">
+                        <h2 className="text-lg font-semibold text-white sm:text-xl">
+                            Challenge and solution
+                        </h2>
+                        <p className="mt-3 leading-relaxed">
+                            One challenge was an early CloudFront/WAF route that caused a spike
+                            in 401/403 responses. We solved it with a full rollback and a simpler
+                            ALB allow-list + fixed-404 strategy, which stabilised traffic and
+                            drove honest reliability to 99.99%.
+                        </p>
                     </section>
 
                     {/* Architecture */}

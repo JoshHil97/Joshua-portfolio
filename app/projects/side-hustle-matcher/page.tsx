@@ -140,8 +140,26 @@ export default function SideHustleMatcherPage() {
                   <span className="text-white/50">Ownership:</span> Quiz design, data model,
                   scoring logic, and explanation copy
                 </li>
+                <li>
+                  <span className="text-white/50">Technical highlight:</span> Designed a
+                  weighted TypeScript scoring model combining skill tags,
+                  preference fit, and friction penalties.
+                </li>
               </ul>
             </aside>
+          </section>
+
+          <section className="mt-10 rounded-2xl border border-white/10 bg-[#090B1C] p-5 text-sm text-white/80">
+            <h2 className="text-lg font-semibold text-white sm:text-xl">
+              Challenge and solution
+            </h2>
+            <p className="mt-3 leading-relaxed">
+              One challenge was avoiding generic role-title recommendations that
+              feel random. I solved it by combining task signals, tool
+              confidence, outputs, and constraints inside a transparent weighted
+              scorer, which produced recommendations users could trust and act
+              on immediately.
+            </p>
           </section>
 
           <section className="mt-16">

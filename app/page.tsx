@@ -1127,17 +1127,19 @@ export default function HomePage() {
             </div>
 
             <p className="max-w-md text-sm text-white/65">
-              A recruiter-ready view of what I can ship confidently now, where
-              I can contribute with support, and what I am actively levelling
-              up.
+              Three clear tiers so recruiters can place me quickly: what I am
+              strongest in now, what I can contribute with immediately, and
+              what I am actively developing.
             </p>
           </div>
 
           {/* Skill Cards */}
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {/* Strongest stack */}
+            {/* Strong in now */}
             <div className="rounded-2xl border border-white/10 bg-[#090B1C] p-5">
-              <h3 className="text-sm font-semibold text-white">Core stack</h3>
+              <h3 className="text-sm font-semibold text-white">
+                Strong in now
+              </h3>
               <p className="mt-1 text-xs text-white/50">
                 Technologies I can be hired to use immediately.
               </p>
@@ -1170,11 +1172,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Working knowledge */}
+            {/* Can work with */}
             <div className="rounded-2xl border border-white/10 bg-[#090B1C] p-5">
-              <h3 className="text-sm font-semibold text-white">
-                Experience with
-              </h3>
+              <h3 className="text-sm font-semibold text-white">Can work with</h3>
               <p className="mt-1 text-xs text-white/50">
                 Technologies where I contribute well and keep strengthening.
               </p>
@@ -1206,9 +1206,7 @@ export default function HomePage() {
 
             {/* Learning now */}
             <div className="rounded-2xl border border-white/10 bg-[#090B1C] p-5">
-              <h3 className="text-sm font-semibold text-white">
-                Currently developing
-              </h3>
+              <h3 className="text-sm font-semibold text-white">Learning now</h3>
               <p className="mt-1 text-xs text-white/50">
                 Platform engineering areas I am actively building stronger depth
                 in.

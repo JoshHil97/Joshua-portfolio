@@ -163,8 +163,25 @@ export default function OilForTheJourneyPage() {
                                     <span className="text-white/50">Ownership:</span> Product
                                     direction, implementation, and release workflow
                                 </li>
+                                <li>
+                                    <span className="text-white/50">Technical highlight:</span>{" "}
+                                    Structured draft/publish states in Supabase with guarded
+                                    admin-only actions and public-read separation.
+                                </li>
                             </ul>
                         </aside>
+                    </section>
+
+                    <section className="mt-10 rounded-2xl border border-white/10 bg-[#090B1C] p-5 text-sm text-white/80">
+                        <h2 className="text-lg font-semibold text-white sm:text-xl">
+                            Challenge and solution
+                        </h2>
+                        <p className="mt-3 leading-relaxed">
+                            One challenge was keeping the reading experience calm while still
+                            supporting private admin workflows. I solved it by separating public
+                            and admin concerns in routing and component structure, which reduced
+                            UI noise for readers and made maintenance safer.
+                        </p>
                     </section>
 
                     {/* Problem + solution */}

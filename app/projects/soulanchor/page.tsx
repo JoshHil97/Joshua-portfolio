@@ -124,8 +124,24 @@ export default function SoulAnchorPage() {
                                     Structured the content in TypeScript for easy extension to
                                     more emotions.
                                 </li>
+                                <li>
+                                    Technical highlight: managed emotion selection and saved
+                                    anchors using typed state and reusable content mappings.
+                                </li>
                             </ul>
                         </aside>
+                    </section>
+
+                    <section className="mt-10 rounded-2xl border border-white/10 bg-[#090B1C] p-5 text-sm text-white/80">
+                        <h2 className="text-lg font-semibold text-white sm:text-xl">
+                            Challenge and solution
+                        </h2>
+                        <p className="mt-3 leading-relaxed">
+                            One challenge was keeping the UI calm while offering 30+ emotion
+                            pathways. I solved it with grouped emotion chips, lightweight motion,
+                            and clear content hierarchy, which improved scan speed without making
+                            the experience feel busy.
+                        </p>
                     </section>
 
                     {/* Features */}
