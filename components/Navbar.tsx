@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 const sections = [
   { href: "#home", label: "Home" },
   { href: "#projects", label: "Projects" },
+  { href: "/play", label: "Play" },
   { href: "#skills", label: "Skills" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
@@ -68,6 +69,12 @@ export default function Navbar() {
 
         {/* Mobile: just show CTA button */}
         <div className="flex items-center gap-2 md:hidden">
+          <Link
+            href="/play"
+            className="rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-white/85"
+          >
+            Play
+          </Link>
           <Link
             href="#oil-for-the-journey"
             className="rounded-full bg-gradient-to-r from-[#6C63FF] to-[#9AE1FF] px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-[#050716] shadow-[0_0_18px_rgba(154,225,255,0.9)]"

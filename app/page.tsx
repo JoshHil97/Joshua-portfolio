@@ -1109,6 +1109,44 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* PLAY SECTION */}
+      <section
+        id="play"
+        className="border-t border-white/10 bg-[#050716] py-20"
+      >
+        <div className="mx-auto max-w-5xl px-4">
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-[#101326] via-[#090B1C] to-[#050716] p-6 shadow-[0_0_34px_rgba(154,225,255,0.14)] sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9AE1FF]">
+              Fun Lab
+            </p>
+            <h2 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
+              TARDIS Runner mini game
+            </h2>
+            <p className="mt-3 max-w-2xl text-sm text-white/70 sm:text-base">
+              A quick break section with a lightweight TARDIS-through-space
+              game and a local leaderboard. It is fast, mobile-friendly, and
+              designed for a bit of fun between project reviews.
+            </p>
+
+            <div className="mt-6 flex flex-wrap items-center gap-3">
+              <a
+                href="/play"
+                className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#6C63FF] via-[#9AE1FF] to-[#6C63FF] px-5 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#050716] shadow-[0_0_24px_rgba(154,225,255,0.8)] transition hover:brightness-110"
+              >
+                Play now
+                <span className="ml-2">↗</span>
+              </a>
+              <span className="rounded-full bg-white/5 px-3 py-1 text-[0.7rem] text-white/70">
+                Tap / click / space to boost
+              </span>
+              <span className="rounded-full bg-white/5 px-3 py-1 text-[0.7rem] text-white/70">
+                Local leaderboard
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SKILLS SECTION */}
       <section
         id="skills"
