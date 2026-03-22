@@ -549,9 +549,9 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                I built a scoring engine that maps role signals to viable
-                side-income offers, then explains fit with commercial next
-                steps.
+                I built a weighted scoring engine with friction penalties that
+                ranks viable side-income paths and explains each recommendation
+                with practical next steps.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -626,9 +626,9 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                I designed and shipped a premium job CRM that replaces
-                fragmented tracking with one secure pipeline, reminder, and
-                follow-up workflow.
+                I designed and shipped a premium job CRM with a clear data
+                model, secure access boundaries, and one workflow for pipeline,
+                reminders, and follow-up.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -813,8 +813,9 @@ export default function HomePage() {
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                In a one-week team build, I owned key backend routes, schema
-                decisions, and auth/session flow for listings and bookings.
+                In a one-week team build, I implemented key backend routes,
+                booking availability checks, and session-based authentication
+                for listings and requests.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
@@ -1049,6 +1050,62 @@ export default function HomePage() {
               </div>
             </motion.article>
           </div>
+
+          <div className="mt-10 rounded-2xl border border-[#9AE1FF]/25 bg-gradient-to-b from-[#101326] to-[#050716] p-6 shadow-[0_0_26px_rgba(154,225,255,0.12)]">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9AE1FF]">
+              Engineering depth snapshot
+            </p>
+            <h3 className="mt-2 text-xl font-semibold text-white sm:text-2xl">
+              Serious engineer moment: reliability under hard constraints
+            </h3>
+            <p className="mt-3 max-w-3xl text-sm text-white/75">
+              In the STABL reliability project, we had to improve availability
+              on a fragile system without editing application code, scaling the
+              service, or faking success responses. I used ALB log analysis in
+              Athena to isolate failure paths and helped implement an
+              allow-listed routing strategy that blocked invalid traffic early.
+            </p>
+
+            <div className="mt-5 grid gap-4 md:grid-cols-4">
+              <div className="rounded-xl border border-white/10 bg-[#090B1C] p-4">
+                <p className="text-[0.65rem] uppercase tracking-[0.16em] text-white/45">
+                  Problem
+                </p>
+                <p className="mt-2 text-xs text-white/80">
+                  A single fragile instance was receiving noisy traffic and
+                  producing real 500 failures.
+                </p>
+              </div>
+              <div className="rounded-xl border border-white/10 bg-[#090B1C] p-4">
+                <p className="text-[0.65rem] uppercase tracking-[0.16em] text-white/45">
+                  Constraints
+                </p>
+                <p className="mt-2 text-xs text-white/80">
+                  No app code changes, no autoscaling, and no fake 200
+                  responses.
+                </p>
+              </div>
+              <div className="rounded-xl border border-white/10 bg-[#090B1C] p-4">
+                <p className="text-[0.65rem] uppercase tracking-[0.16em] text-white/45">
+                  Decision &amp; trade-off
+                </p>
+                <p className="mt-2 text-xs text-white/80">
+                  Allow-list valid routes and return fixed 404 for unknown
+                  paths, accepting stricter edge behaviour for safer backend
+                  protection.
+                </p>
+              </div>
+              <div className="rounded-xl border border-[#9AE1FF]/30 bg-[#090B1C] p-4">
+                <p className="text-[0.65rem] uppercase tracking-[0.16em] text-[#9AE1FF]">
+                  Outcome
+                </p>
+                <p className="mt-2 text-xs text-white/85">
+                  STABL reached 99.99% success with reliability improvements
+                  that reflected real system health.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1080,16 +1137,17 @@ export default function HomePage() {
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {/* Strongest stack */}
             <div className="rounded-2xl border border-white/10 bg-[#090B1C] p-5">
-              <h3 className="text-sm font-semibold text-white">
-                Strongest / production-ready
-              </h3>
+              <h3 className="text-sm font-semibold text-white">Core stack</h3>
               <p className="mt-1 text-xs text-white/50">
-                Technologies I am most confident using in end-to-end delivery.
+                Technologies I can be hired to use immediately.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/85">
                 <span className="rounded-full bg-white/5 px-2 py-1">
                   TypeScript
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Node.js
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
                   Next.js
@@ -1115,10 +1173,10 @@ export default function HomePage() {
             {/* Working knowledge */}
             <div className="rounded-2xl border border-white/10 bg-[#090B1C] p-5">
               <h3 className="text-sm font-semibold text-white">
-                Working knowledge
+                Experience with
               </h3>
               <p className="mt-1 text-xs text-white/50">
-                Tools I can contribute with and deepen quickly in delivery teams.
+                Technologies where I contribute well and keep strengthening.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/85">
@@ -1149,7 +1207,7 @@ export default function HomePage() {
             {/* Learning now */}
             <div className="rounded-2xl border border-white/10 bg-[#090B1C] p-5">
               <h3 className="text-sm font-semibold text-white">
-                Currently learning
+                Currently developing
               </h3>
               <p className="mt-1 text-xs text-white/50">
                 Platform engineering areas I am actively building stronger depth
@@ -1162,6 +1220,9 @@ export default function HomePage() {
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
                   AWS fundamentals
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  CI/CD workflows
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
                   Platform reliability patterns
@@ -1311,9 +1372,10 @@ export default function HomePage() {
             </h2>
 
             <p className="mt-3 max-w-xl text-sm text-white/65 sm:text-base">
-              Open to junior software engineer, full stack, and platform-focused
-              roles in London or hybrid environments. If you need an engineer
-              who can own features and ship cleanly, I&apos;d love to connect.
+              Actively seeking junior software engineer, full stack, and
+              platform-focused roles in London or hybrid environments, with
+              openness to UK remote teams. If you need an engineer who can own
+              features and ship cleanly, I&apos;d love to connect.
             </p>
 
             {/* Main CTA buttons */}

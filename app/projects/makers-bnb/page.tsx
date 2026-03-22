@@ -27,8 +27,8 @@ export default function MakersBnbPage() {
                             This project solved the core booking workflow problem from scratch:
                             users needed to list spaces, request dates, and avoid booking
                             clashes. In a one-week team sprint, I focused on backend delivery,
-                            schema design, auth/session flow, and test coverage in a TDD-first
-                            setup.
+                            schema design, session auth flow, availability logic, and test
+                            coverage in a TDD-first setup.
                         </p>
 
                         <div className="mt-5 flex flex-wrap gap-3 text-xs text-white/80">
@@ -166,6 +166,57 @@ export default function MakersBnbPage() {
                                 <li>
                                     Strong communication through pairing, standups, and PR
                                     reviews.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section className="mt-16 grid gap-10 md:grid-cols-2">
+                        <div>
+                            <h2 className="text-lg font-semibold text-white sm:text-xl">
+                                Engineering decisions and trade-offs
+                            </h2>
+                            <ul className="mt-4 space-y-3 text-sm leading-relaxed text-white/80">
+                                <li>
+                                    <strong>Availability checks before booking writes:</strong>{" "}
+                                    we validated date ranges before persisting requests so
+                                    overlapping bookings were rejected consistently.
+                                </li>
+                                <li>
+                                    <strong>Session auth over heavier token setup:</strong>{" "}
+                                    session-based auth kept the one-week delivery realistic while
+                                    still protecting create and booking routes.
+                                </li>
+                                <li>
+                                    <strong>Repository-style query flow:</strong> separating data
+                                    access from route handlers made booking logic easier to test
+                                    and reason about.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h2 className="text-lg font-semibold text-white sm:text-xl">
+                                Debugging and implementation depth
+                            </h2>
+                            <ul className="mt-4 space-y-3 text-sm leading-relaxed text-white/80">
+                                <li>
+                                    <strong>I implemented</strong> route handlers for listings,
+                                    booking requests, and request review flows.
+                                </li>
+                                <li>
+                                    <strong>I designed</strong> booking-related schema and query
+                                    paths for date filtering and conflict checks.
+                                </li>
+                                <li>
+                                    <strong>I fixed</strong> date-boundary failures in specs by
+                                    tracing request values through route, repository, and query
+                                    layers.
+                                </li>
+                                <li>
+                                    <strong>I improved</strong> confidence with feature tests that
+                                    covered create-listing, request-booking, and user-session
+                                    behaviour end to end.
                                 </li>
                             </ul>
                         </div>
