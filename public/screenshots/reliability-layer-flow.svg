@@ -1,0 +1,77 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="140" y1="120" x2="1460" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1630"/>
+      <stop offset="1" stop-color="#050716"/>
+    </linearGradient>
+    <linearGradient id="success" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#9AE1FF"/>
+      <stop offset="1" stop-color="#7CF3C8"/>
+    </linearGradient>
+    <linearGradient id="failure" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFC27A"/>
+      <stop offset="1" stop-color="#FF7A9E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg2)"/>
+
+  <text x="110" y="108" fill="#9AE1FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">REQUEST FLOW</text>
+  <text x="110" y="154" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">Success path and degraded path</text>
+  <text x="110" y="194" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="24">The gateway shapes traffic before it reaches the dependency, then chooses a controlled response.</text>
+
+  <rect x="90" y="272" width="210" height="90" rx="24" fill="#0C1328" stroke="#2D3A67"/>
+  <text x="130" y="327" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Client request</text>
+
+  <path d="M300 317H382" stroke="#9AE1FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M364 301L400 317L364 333" fill="none" stroke="#9AE1FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="400" y="272" width="230" height="90" rx="24" fill="#0C1328" stroke="#2D3A67"/>
+  <text x="437" y="307" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Auth + rate limit</text>
+  <text x="437" y="339" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="18">429 early if needed</text>
+
+  <path d="M630 317H712" stroke="#9AE1FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M694 301L730 317L694 333" fill="none" stroke="#9AE1FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="730" y="272" width="230" height="90" rx="24" fill="#0C1328" stroke="#2D3A67"/>
+  <text x="765" y="307" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Allowlist + cache</text>
+  <text x="765" y="339" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="18">serve fresh cache if present</text>
+
+  <path d="M960 317H1042" stroke="#9AE1FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1024 301L1060 317L1024 333" fill="none" stroke="#9AE1FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1060" y="272" width="250" height="90" rx="24" fill="#0C1328" stroke="#2D3A67"/>
+  <text x="1098" y="307" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Breaker + retries</text>
+  <text x="1098" y="339" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="18">timeouts, jitter, caps</text>
+
+  <path d="M1310 317H1392" stroke="#9AE1FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1374 301L1410 317L1374 333" fill="none" stroke="#9AE1FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1410" y="272" width="120" height="90" rx="24" fill="#0C1328" stroke="#2D3A67"/>
+  <text x="1442" y="327" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Upstream</text>
+
+  <path d="M1470 362V448" stroke="url(#success)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1454 430L1470 466L1486 430" fill="none" stroke="#7CF3C8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1210" y="492" width="320" height="132" rx="28" fill="#0C1328" stroke="#2A5A63"/>
+  <text x="1248" y="540" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Success path</text>
+  <text x="1248" y="580" fill="#CFEDE7" font-family="Arial, Helvetica, sans-serif" font-size="22">2xx response returned</text>
+  <text x="1248" y="612" fill="#CFEDE7" font-family="Arial, Helvetica, sans-serif" font-size="22">cache stored</text>
+
+  <path d="M1185 362V470" stroke="url(#failure)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1169 452L1185 488L1201 452" fill="none" stroke="#FF9A8F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="732" y="492" width="380" height="158" rx="28" fill="#0C1328" stroke="#65405E"/>
+  <text x="770" y="540" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Failure path</text>
+  <text x="770" y="580" fill="#F2D6DE" font-family="Arial, Helvetica, sans-serif" font-size="22">timeout or 5xx after bounded retries</text>
+  <text x="770" y="612" fill="#F2D6DE" font-family="Arial, Helvetica, sans-serif" font-size="22">serve stale response if allowed</text>
+  <text x="770" y="644" fill="#F2D6DE" font-family="Arial, Helvetica, sans-serif" font-size="22">otherwise return controlled 502 / 503 / 504</text>
+
+  <path d="M922 650V744" stroke="#FFC27A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M906 726L922 762L938 726" fill="none" stroke="#FFC27A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1370 624V744" stroke="#7CF3C8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1354 726L1370 762L1386 726" fill="none" stroke="#7CF3C8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="742" y="760" width="730" height="88" rx="24" fill="#0C1328" stroke="#2D3A67"/>
+  <text x="782" y="813" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Controlled response back to caller with logs, metrics, and request ID propagation</text>
+</svg>

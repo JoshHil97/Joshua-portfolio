@@ -1,0 +1,77 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="180" y1="90" x2="1420" y2="810" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10172E"/>
+      <stop offset="1" stop-color="#050716"/>
+    </linearGradient>
+    <linearGradient id="card" x1="300" y1="170" x2="1300" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111935"/>
+      <stop offset="1" stop-color="#0A0F22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#9AE1FF"/>
+      <stop offset="1" stop-color="#6C63FF"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <ellipse cx="300" cy="160" rx="170" ry="120" fill="#9AE1FF" fill-opacity="0.12" filter="url(#glow)"/>
+  <ellipse cx="1320" cy="720" rx="200" ry="140" fill="#6C63FF" fill-opacity="0.14" filter="url(#glow)"/>
+
+  <text x="110" y="108" fill="#9AE1FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">RELIABILITY LAYER API</text>
+  <text x="110" y="154" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">Shared dependency gateway</text>
+  <text x="110" y="194" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="24">One request pipeline for timeouts, retries, circuit breaking, caching, rate limits, and telemetry.</text>
+
+  <rect x="110" y="260" width="220" height="120" rx="26" fill="#0D1328" stroke="#2D3A67"/>
+  <text x="150" y="312" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Callers</text>
+  <text x="150" y="350" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="20">services</text>
+  <text x="238" y="350" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="20">jobs</text>
+  <text x="150" y="378" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="20">web backends</text>
+
+  <path d="M330 320H410" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M394 304L430 320L394 336" fill="none" stroke="#9AE1FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="430" y="220" width="650" height="440" rx="32" fill="url(#card)" stroke="#2F3F79"/>
+  <text x="470" y="274" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Reliability Layer API</text>
+  <text x="470" y="308" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="22">FastAPI gateway with shared request policy</text>
+
+  <rect x="470" y="344" width="570" height="70" rx="20" fill="#0B1226" stroke="#243055"/>
+  <text x="505" y="388" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Auth</text>
+  <text x="660" y="388" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Rate limiting</text>
+  <text x="880" y="388" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Allowlisted routing</text>
+
+  <rect x="470" y="438" width="570" height="70" rx="20" fill="#0B1226" stroke="#243055"/>
+  <text x="505" y="482" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Cache + stale fallback</text>
+  <text x="790" y="482" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Circuit breaker</text>
+
+  <rect x="470" y="532" width="570" height="70" rx="20" fill="#0B1226" stroke="#243055"/>
+  <text x="505" y="576" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Bounded retries + jitter</text>
+  <text x="820" y="576" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">HTTPX client</text>
+
+  <rect x="1120" y="260" width="280" height="120" rx="26" fill="#0D1328" stroke="#2D3A67"/>
+  <text x="1160" y="312" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Upstreams</text>
+  <text x="1160" y="350" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="20">third-party APIs</text>
+  <text x="1160" y="378" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="20">internal services</text>
+
+  <path d="M1080 320H1120" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1100 304L1136 320L1100 336" fill="none" stroke="#9AE1FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1120" y="454" width="280" height="186" rx="26" fill="#0D1328" stroke="#2D3A67"/>
+  <text x="1160" y="504" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Observability</text>
+  <text x="1160" y="546" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="22">/metrics</text>
+  <text x="1265" y="546" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="22">→ Prometheus</text>
+  <text x="1160" y="580" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="22">Prometheus</text>
+  <text x="1285" y="580" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="22">→ Grafana</text>
+  <text x="1160" y="614" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="22">stdout</text>
+  <text x="1242" y="614" fill="#AEB7D9" font-family="Arial, Helvetica, sans-serif" font-size="22">→ structured logs</text>
+
+  <path d="M1080 548H1120" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1100 532L1136 548L1100 564" fill="none" stroke="#9AE1FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M755 660V740" stroke="#6C63FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M739 722L755 758L771 722" fill="none" stroke="#6C63FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="538" y="812" fill="#C8D0EA" font-family="Arial, Helvetica, sans-serif" font-size="24">Consistent policies, consistent telemetry, easier to reason about failure</text>
+</svg>
+

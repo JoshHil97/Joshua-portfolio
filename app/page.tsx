@@ -51,10 +51,12 @@ export default function HomePage() {
               I build full stack web and mobile apps, and I love taking an idea
               from a rough sketch to something people can actually use. Recent
               work includes <strong>Oil for the Journey</strong>, a reflective
-              writing platform built with Next.js and Supabase, the{" "}
+              writing platform built with Next.js and Supabase, my personal{" "}
+              <strong>Reliability Layer API</strong>, the{" "}
               <strong>Reliability Project</strong> with my STABL team, a church
               directory for VBCI, <strong>Makers BnB</strong> at Makers Academy,
-              and <strong>SoulAnchor</strong>, a React Native encouragement app.
+              and <strong>SoulAnchor</strong>, a React Native encouragement
+              app.
             </p>
 
             {/* CTAs */}
@@ -357,8 +359,8 @@ export default function HomePage() {
 
               {/* 6 – Reliability Project */}
               <JourneyItemRight
-                label="Reliability"
-                title="Reliability Project"
+                label="Team reliability · STABL"
+                title="Reliability Project (STABL)"
                 body="Reliability work where my team STABL improved a fragile HOSP backend without changing app code. We used ALB access logs and Athena to find failing routes, then allow listed valid paths and returned 404 for everything else."
                 tags={["STABL", "ALB", "Athena"]}
               />
@@ -388,7 +390,7 @@ export default function HomePage() {
                 tags={["Next.js", "Supabase", "Full stack web"]}
               />
 
-                            {/* 10 – Side Hustle Matcher */}
+              {/* 10 – Side Hustle Matcher */}
               <JourneyItemLeft
                 label="Product launch"
                 title="Side Hustle Matcher"
@@ -404,15 +406,13 @@ export default function HomePage() {
                 tags={["Next.js", "Supabase", "CRM"]}
               />
 
-              {/* 12 – Next steps */}
+              {/* 12 – Reliability Layer API */}
               <JourneyItemLeft
-                label="Coming next"
-                title="Cloud and deeper backend work"
-                body="Next up is more cloud deployment work, stronger backend architecture, and projects that handle more scale and complexity."
-                tags={["Cloud", "Backend", "TypeScript"]}
-                isFuture
+                label="Personal platform build"
+                title="Reliability Layer API"
+                body="Built a backend-focused gateway that standardises timeouts, bounded retries, circuit breaking, caching, rate limiting, and observability for upstream API calls. It is designed to be tested through behaviour, metrics, and failure handling rather than a glossy UI."
+                tags={["FastAPI", "Docker", "Prometheus"]}
               />
-
             </div>
           </motion.div>
         </div>
@@ -435,8 +435,8 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="max-w-md text-sm text-white/65">
-              Product-led full stack builds, practical recommendation engines,
-              and CRM workflows designed for real users.
+              Product-led full stack builds, backend reliability tooling, and
+              CRM workflows designed for real users and real operations.
             </p>
           </div>
 
@@ -458,7 +458,7 @@ export default function HomePage() {
                 <img
                   src="/screenshots/oilfor-home.png"
                   alt="Oil for the Journey UI"
-                  className="h-32 w-full object-cover"
+                  className="h-32 w-full object-contain object-center bg-[#0A0F22]"
                   onError={(event) => {
                     const img = event.currentTarget;
                     img.onerror = null;
@@ -534,7 +534,7 @@ export default function HomePage() {
                 <img
                   src="/screenshots/side-hustle-landing.png"
                   alt="Side Hustle Matcher project preview"
-                  className="h-32 w-full object-cover"
+                  className="h-32 w-full object-cover object-center"
                   onError={(event) => {
                     const img = event.currentTarget;
                     img.onerror = null;
@@ -610,7 +610,7 @@ export default function HomePage() {
                 <img
                   src="/screenshots/application-command-landing.png"
                   alt="Application Command Centre project preview"
-                  className="h-32 w-full object-cover"
+                  className="h-32 w-full object-cover object-center"
                   onError={(event) => {
                     const img = event.currentTarget;
                     img.onerror = null;
@@ -669,6 +669,69 @@ export default function HomePage() {
               </div>
             </motion.article>
 
+            {/* Reliability Layer API CARD */}
+            <motion.article
+              whileHover={{
+                y: -6,
+                scale: 1.015,
+                boxShadow: "0 18px 45px rgba(0,0,0,0.6)",
+              }}
+              whileTap={{ scale: 0.99 }}
+              transition={{ type: "spring", stiffness: 260, damping: 22 }}
+              className="flex flex-col rounded-2xl border border-[#9AE1FF]/30 bg-gradient-to-b from-[#101326] to-[#050716] p-5 shadow-[0_0_28px_rgba(154,225,255,0.14)]"
+            >
+              <div className="mb-3 overflow-hidden rounded-xl border border-white/5 bg-black/40">
+                <img
+                  src="/screenshots/reliability-layer-architecture.svg"
+                  alt="Reliability Layer API architecture diagram"
+                  className="h-32 w-full object-contain object-center bg-[#0A0F22]"
+                />
+              </div>
+
+              <h3 className="text-sm font-semibold text-white">
+                Reliability Layer API
+              </h3>
+
+              <p className="mt-2 text-xs text-white/70">
+                Personal backend and platform project that centralises timeouts,
+                retries, circuit breaking, caching, rate limiting, and
+                observability for upstream HTTP dependencies.
+              </p>
+
+              <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  FastAPI
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Docker
+                </span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  Prometheus
+                </span>
+              </div>
+
+              <div className="mt-4 flex-1" />
+
+              <div className="mt-4 flex flex-col gap-1 text-xs font-semibold">
+                <a
+                  href="/projects/reliability-layer-api"
+                  className="inline-flex items-center text-[#9AE1FF] transition hover:text-white"
+                >
+                  View case study
+                  <span className="ml-1">↗</span>
+                </a>
+                <a
+                  href="https://github.com/JoshHil97/reliability-layer-api"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center text-white/70 transition hover:text-white"
+                >
+                  View code
+                  <span className="ml-1">↗</span>
+                </a>
+              </div>
+            </motion.article>
+
             {/* Reliability Project CARD */}
             <motion.article
               whileHover={{
@@ -689,7 +752,7 @@ export default function HomePage() {
               </div>
 
               <h3 className="text-sm font-semibold text-white">
-                Reliability Project
+                Reliability Project (STABL)
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
