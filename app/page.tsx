@@ -1060,10 +1060,17 @@ export default function HomePage() {
 
               <div className="mt-4 flex flex-col gap-1 text-xs font-semibold">
                 <a
+                  href="/projects/church-sound-academy"
+                  className="inline-flex items-center text-[#9AE1FF] transition hover:text-white"
+                >
+                  View case study
+                  <span className="ml-1">↗</span>
+                </a>
+                <a
                   href="https://sound-platform-iota.vercel.app"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center text-[#9AE1FF] transition hover:text-white"
+                  className="inline-flex items-center text-white/70 transition hover:text-white"
                 >
                   Live site
                   <span className="ml-1">↗</span>
