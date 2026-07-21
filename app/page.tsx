@@ -789,7 +789,7 @@ export default function HomePage() {
               </div>
             </motion.article>
 
-            {/* Makers BnB CARD */}
+            {/* Budget & Savings Goals CARD */}
             <motion.article
               whileHover={{
                 y: -6,
@@ -802,44 +802,53 @@ export default function HomePage() {
             >
               <div className="mb-3 overflow-hidden rounded-xl border border-white/5 bg-black/40">
                 <img
-                  src="/screenshots/makersbnb.png"
-                  alt="Makers BnB UI"
+                  src="/screenshots/budget-dashboard.png"
+                  alt="Budget & Savings Goals dashboard"
                   className="h-32 w-full object-cover"
+                  onError={(event) => {
+                    const img = event.currentTarget;
+                    img.onerror = null;
+                    img.src = "/screenshots/oilfor-placeholder.svg";
+                  }}
                 />
               </div>
 
               <h3 className="text-sm font-semibold text-white">
-                Makers BnB Project
+                Budget & Savings Goals
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                In a one-week team build, I implemented key backend routes,
-                booking availability checks, and session-based authentication
-                for listings and requests.
+                I built a local-first budgeting app that separates planning from
+                tracking, with savings goals, debt payoff, monthly rollover, and
+                CSV/JSON backup — pure vanilla JS, no framework or backend.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Full stack
+                  Vanilla JS
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Bookings
+                  localStorage
                 </span>
-                <span className="rounded-full bg-white/5 px-2 py-1">TDD</span>
+                <span className="rounded-full bg-white/5 px-2 py-1">
+                  CSV / JSON
+                </span>
               </div>
 
               <div className="mt-4 flex-1" />
 
               <div className="mt-4 flex flex-col gap-1 text-xs font-semibold">
                 <a
-                  href="/projects/makers-bnb"
+                  href="https://budget-tracker-jcx4.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center text-[#9AE1FF] transition hover:text-white"
                 >
-                  View case study
+                  Live site
                   <span className="ml-1">↗</span>
                 </a>
                 <a
-                  href="https://github.com/JoshHil97/makersbnb-case-study"
+                  href="https://github.com/JoshHil97/budget-tracker"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center text-white/70 transition hover:text-white"
@@ -993,7 +1002,7 @@ export default function HomePage() {
               </div>
             </motion.article>
 
-            {/* Accountability Tracker CARD */}
+            {/* Church Sound Academy CARD */}
             <motion.article
               whileHover={{
                 y: -6,
@@ -1007,30 +1016,36 @@ export default function HomePage() {
               {/* Screenshot */}
               <div className="mb-3 overflow-hidden rounded-xl border border-white/5 bg-black/40">
                 <img
-                  src="/screenshots/accountability-today.png"
-                  alt="Accountability tracker today view"
+                  src="/screenshots/sound-platform-dashboard.png"
+                  alt="Church Sound Academy platform"
                   className="h-32 w-full object-cover"
+                  onError={(event) => {
+                    const img = event.currentTarget;
+                    img.onerror = null;
+                    img.src = "/screenshots/oilfor-placeholder.svg";
+                  }}
                 />
               </div>
 
               <h3 className="text-sm font-semibold text-white">
-                Accountability Tracker
+                Church Sound Academy
               </h3>
 
               <p className="mt-2 text-xs text-white/70">
-                I built a data-focused Streamlit dashboard to track habits and
-                weekly trends, making personal progress easy to review quickly.
+                I designed a training platform for church sound teams: a learning
+                academy with quizzes, troubleshooting decision trees, an SOP
+                library, and certification tracking, built on Next.js and Prisma.
               </p>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[0.7rem] text-white/70">
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Python
+                  Next.js
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Streamlit
+                  Prisma
                 </span>
                 <span className="rounded-full bg-white/5 px-2 py-1">
-                  Data visualisation
+                  PostgreSQL
                 </span>
               </div>
 
@@ -1038,15 +1053,23 @@ export default function HomePage() {
 
               <div className="mt-4 flex flex-col gap-1 text-xs font-semibold">
                 <a
-                  href="https://accountabilityapp-ckxx4fr7d5bbxgqywo9fzs.streamlit.app/"
+                  href="https://sound-platform-iota.vercel.app"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center text-[#9AE1FF] transition hover:text-white"
                 >
-                  Live demo
+                  Live site
                   <span className="ml-1">↗</span>
                 </a>
-                {/* Add a GitHub link here later when you have a repo URL */}
+                <a
+                  href="https://github.com/JoshHil97/Sound-Platform"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center text-white/70 transition hover:text-white"
+                >
+                  View code
+                  <span className="ml-1">↗</span>
+                </a>
               </div>
             </motion.article>
           </div>
