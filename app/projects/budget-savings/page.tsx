@@ -275,6 +275,21 @@ export default function BudgetSavingsPage() {
                 alt="Monthly insights and tracking view"
                 caption="Tracking surfaces locally calculated insights — savings rate, unallocated income, and upcoming planned costs."
               />
+              <Screenshot
+                src="/screenshots/budget-actual-spending.png"
+                alt="Actual spending against plan per category"
+                caption="Actual spending compares logged purchases against each category's plan, with per-category progress bars and remaining amounts."
+              />
+              <Screenshot
+                src="/screenshots/budget-summary.png"
+                alt="Monthly summary with where-the-money-went donut chart"
+                caption="The monthly summary reviews giving, saving, spending, and cash remaining, with a hand-built donut chart breaking down where income went."
+              />
+              <Screenshot
+                src="/screenshots/budget-goals.png"
+                alt="Savings goals progress tracking"
+                caption="Progress view tracks longer-term savings goals with targets, monthly contributions, and estimated completion."
+              />
             </div>
           </section>
         </div>
